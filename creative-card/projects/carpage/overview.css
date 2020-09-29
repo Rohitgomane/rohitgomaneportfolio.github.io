@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    
+    background:  rgb(231, 231, 231);
+    background-size: cover;
+    font-family: Poppins;
+    justify-content: center;
+    align-items: center;
+    animation: load-animation 0.7s ease-in;
+    
+}
+
+
+.left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 99;
+}
+.left-arrow img {
+    height: 50px;
+    width: 50px;
+}
+
+.presentation{
+   
+    display: flex;
+    width: 100%;
+    height: 690px;
+    margin: auto;
+    min-height: 100vh;
+    align-items: center;
+   overflow: hidden;
+    background-size: cover;
+    animation: background 60s linear infinite;
+}
+
+#model {
+    position: absolute;
+    margin: 150px 0px 0px 50px;
+    transition: 0.5s ease;
+}
+#model h1 {
+     color: white;
+     font-size: 30px; 
+     width: 100%;
+     text-decoration: underline;
+   
+}
+
+
+.addtocart {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background:  #ff022c;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 600px 0px 0px 270px;
+    border-radius: 8px;
+    transition: 0.5s ease;
+
+}
+.addtocart:hover {
+    filter: drop-shadow(0px 2px 1px black);
+    color: rgb(209, 209, 209);
+    margin: 593px 0px 0px 270px;
+}
+
+
+.price {
+    position: relative;
+    background-color: transparent;
+    width: 40%;
+    border: none;
+    margin: 600px 0px 0px 50px;
+    color: rgb(230, 230, 230);
+    transition: 0.5s ease;
+}
+.price h3 {
+    font-size: 16px;
+    font-weight: 500;
+    filter: drop-shadow(0px 2px 1px black);
+
+}
+.price h1 {
+    font-size: 22px;
+    font-weight: 600;
+    filter: drop-shadow(0px 1px 1px black);
+
+}
+
+
+.right {
+    position: relative;
+   
+    height: 99%;
+    width: 35%;
+    transform: translateX(0%);
+    border-radius: 8px;
+    background: darkslateblue;
+    filter: drop-shadow(0px 3px 5px black);
+    transition: 1s ease-out;
+
+}
+
+
+
+.left {
+    position: relative;
+    height: 99%;
+    width: 35%;
+    transform: translateX(187%);
+    border-radius: 8px;
+    background: darkslateblue;
+    filter: drop-shadow(0px 3px 5px black);
+    transition: 1s ease-out;
+
+}
+
+
+.carcontainer {
+    position: absolute;
+    width: 700px;
+    background: transparent;
+    transform: translateX(1%);
+    transition: 2s ease-in-out;
+    
+}
+ #chassie {
+    height: 200px;
+}
+#fwheel {
+    position: absolute;
+    width: 110px;
+    left: 452px;
+    top: 80px;
+    /*transform: translateY(79px);*/
+    transition: 2s ease-in-out;
+}
+
+#rwheel {
+    position: absolute;
+    width: 116px;
+    left: 67px;
+    top: 73px;
+    /*transform: translateY(73px);
+*/
+    transition: 2s ease-in-out;
+}
+
+.backicon {
+    position: absolute;
+    cursor: pointer;
+    top: 40px;
+    left: 20px;
+    
+    opacity: 0;
+
+    transform:translateX(0px);
+    transition: 2s ease;
+}
+#goback {
+    width: 45px;
+    
+    transition: 1s;
+}
+.backicon:hover {
+    top: 35px;
+    filter: drop-shadow(1px 2px 1px rgba(0,0,0,0.5));
+
+}
+#carticon {
+    position: absolute;
+    
+    left:50px;
+    top: 130px;
+}
+#carticon img {
+    height: 40px;
+    opacity: 0;
+
+    transform:translateX(0px);
+    transition: 2s ease;
+}
+#carticon h1 {
+    margin: 20px 0px 0px 0px;
+    font-size: 40px;
+    opacity: 0;
+
+    transform:translateX(0px);
+    transition: 2s ease;
+}
+
+
+
+#continueshopping {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(61, 61, 61);
+    width: 200px;
+    height: 50px;
+    margin: 20px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    opacity: 0;
+
+    transform:translateX(0px);
+    transition: 2s ease; 
+    
+}
+#continueshopping:hover {
+    scale: 2;
+    font-size: 18px;
+    border: 2px solid rgb(139, 139, 139);
+    
+
+}
+
+
+#checkout {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background:  #ff022c;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0px 0px 50px;
+    border-radius: 8px;
+    opacity: 0;
+
+    transform:translateX(0px);
+    
+    transition: 2s ease;
+
+}
+#checkout:hover {
+    filter: drop-shadow(0px 2px 1px black);
+    color: rgb(209, 209, 209);
+    
+    margin: 10px 0px 0px 50px;
+}
+
+
+
+#configure {
+    position: absolute;
+    right: 20px;
+    
+    height: 88%;
+    width: 50%;
+}
+#configure h1 {
+    font-size: 44px;
+    margin: 200px 0px 0px 30px;
+}
+
+
+.skew_image {
+    position: relative;
+    right: 30px;
+    margin: 0px 0px 50px 0px;
+    height: 550px;
+    width: 1000px;
+   
+    
+    
+    
+}
+.one {
+    position: relative;
+    right: 100px;
+   margin: 0px 0px 0px 0px;
+    height: 550px;
+    
+}
+.over {
+
+    height: 350px;
+    width: 600px;
+    margin: 0px 60px 0px 0px; 
+       
+}
+.over1 {
+    font-size: 44px;
+    font-weight: 800;
+    color: black;
+}
+.over2 {
+    font-size: 16px;
+    color: black;
+}
+
+
+
+.skew_imager {
+    position: relative;
+   
+    margin: 0px 0px 50px 0px;
+    height: 550px;
+    width: 1000px;
+   
+    flex: 1;
+    
+    
+}
+.interior {
+    position: relative;
+    left: 20px;
+   
+    height: 550px;
+    transform: scaleX(-1);
+    
+}
+.overr {
+
+    margin: 0px 00px 0px 60px;
+    height: 350px;
+    width: 1000px;
+
+    flex: 2;
+    
+}
+.over1r {
+    font-size: 44px;
+    font-weight: 800;
+    color: black;
+}
+.over2r {
+    font-size: 16px;
+    color: black;
+    margin: 20px 0px 0px 0px;
+}
+
+
+
+@keyframes load-animation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

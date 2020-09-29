@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    
+    background:  black;
+    background-size: cover;
+    font-family: Poppins;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 99;
+}
+.left-arrow img {
+    height: 50px;
+    width: 50px;
+}
+
+
+/*               NAVIGATION BAR                */
+
+
+header {
+    position: fixed;
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+ 
+    background: rgba(0,0,0,0.5);
+    height: 70px;
+
+    
+    
+}
+.logo-container img {
+    height: 120px;
+    width: 160px;
+    
+}
+.logo-container, .nav-links, .cart {
+    display: flex;
+}
+.logo-container {
+    flex:3;
+}
+nav{
+   
+    flex:2;
+    
+
+}
+.nav-links {
+    justify-content: space-around;
+   
+    list-style: none;
+}
+.nav-link a{
+    color : rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+/*          UNDERLINE                   */
+
+
+#underline {
+    position: absolute;
+    bottom:20%;
+    left: 58%;
+    width: 79px;
+    height: 3%;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    transition: 0.5s;
+    z-index: 1;
+    animation: animate 8s linear infinite;
+}
+
+
+
+#underline:before {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom:-2px;
+    left: -2px;
+    width: 114px;
+    height: 3%;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    transition: 0.5s;
+    z-index: -1;
+    opacity: 1;
+    filter: blur(20px);
+    animation: animate 8s linear infinite;
+}
+#underline:hover:before {
+    opacity: 1;
+    filter: blur(20px);
+    animation: animate 8s linear infinite;
+}
+
+/*               CART                */
+
+.cart {
+    justify-content: flex-end;
+   margin: 0px 20px 0px 0px;
+    flex: 0;
+}
+.cart img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+/*        BURGER MENU            */
+.burger{
+    display: none;
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+.burger div{
+    height: 2px;
+    width: 25px;
+    background:white;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+ul li a:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
+    z-index: 1;
+    animation: animate 8s linear infinite;
+}
+
+
+
+/*          MAIN BODY         */
+
+
+.presentation{
+   
+    border: 2px solid black;
+    display: flex;
+    width: 100%;
+    
+    margin: auto;
+
+    align-items: center;
+   overflow: hidden;
+    background-size: cover;
+    animation: background 60s linear infinite;
+}
+
+
+/*                         CARD                                */
+
+
+
+
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 0px 0px 160px;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+/*            car               background           */
+
+
+.container .card .face.background1 {
+    background: url("card/koenigsegg.jpg");
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+.container .card .face.background2 {
+    background: url("card/bugatti_chiron.jpg");
+    margin: 0px 0px 0px 0px;
+    background-position: -50px 0px;
+    
+    filter: grayscale(100%);
+    background-size: cover;
+    
+}
+
+.container .card .face.background3 {
+    background: url("card/ferrari_fxxk.jpg");
+    background-position: -20px;
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+
+
+.container .card .face.background4 {
+    background: url("card/mclarean_senna.jpg");
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+
+
+.container .card .face.background5 {
+    background: url("card/audi_r8.jpg");
+    background-position: -80px -80px;
+    filter: grayscale(100%);
+    background-size: 150%;
+}
+
+
+
+.container .card .face.background6 {
+    background: url("card/lamborghini_urus.jpg");
+    background-position: -20px;
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+
+
+.container .card:hover .face.face1{
+   /* background: #ff0057;*/
+   filter: grayscale(0%);
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    
+    opacity: 0.5;
+    transition: 0.5s;
+    filter: drop-shadow(0px 2px 1px black);
+}
+
+.container .card:hover .face.face1 .content{
+    filter: grayscale(0%);
+    opacity: 1;
+    filter: drop-shadow(0px 2px 1px black);
+}
+
+.container .card .face.face1 .content img{
+    
+    max-width: 200px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    margin: 150px 0px 0px 0px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+
+
+
+ 
+
+@media screen and (max-width: 1050px)
+{
+    body {
+        overflow: hidden;
+    }
+    .presentation {
+        flex-direction: column;
+        
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+        margin-top: 300px;
+        margin: 450px 100px 0px 0px;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+        margin: 0px 0px 0px 50px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+        margin: 0px -70px 0px 0px;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 7vh;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    #underline {
+        display: none;
+    }
+    .container2 {
+        flex-direction: column;
+        margin: 0px 0px 0px 800px;
+    }
+
+
+}
+
+
+
+@keyframes animate
+{
+    0%
+    {
+      background-position: 0%;
+    }
+    
+    100%
+    {
+      background-position: 400%;
+    }
+    
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes background {
+    0% {
+        background-size: 100%;
+        
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}

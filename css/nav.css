@@ -1,0 +1,196 @@
+
+header {
+    position: absolute;
+    left: 0%;
+    height: 100%;
+    width: 4.538799414348462vw;
+    background: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+nav {
+    height: 60%;
+    width: 4.538799414348462vw;
+    background: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button:nth-child(1) {
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../navbar/home1.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(1):hover {
+    background-image: none;
+}
+
+.button:nth-child(2) {
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../navbar/project1.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(2):hover {
+    background-image: none;
+}
+
+.button:nth-child(3) {
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../navbar/pencil1.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(3):hover {
+    background-image: none;
+}
+
+.button:nth-child(4) {
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../navbar/info1.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(4):hover {
+    background-image: none;
+}
+
+.button:nth-child(5) {
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../navbar/contact1.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(5):hover {
+    background-image: none;
+}
+
+.icon-name {
+    position: absolute;
+    color: rgb(0, 238, 255);
+    font-size: 1.3177159590043923vw;
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.button:hover .icon-name {
+    opacity: 1;
+}
+
+.content-container {
+
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   overflow: hidden;
+}
+#home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    line-height: 59px;
+    transition: 1s ease;
+    padding: 10px 10px 10px 10px;
+}
+#about {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 1s ease;
+}
+#skills {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+#project {
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s ease;
+}
+#contact {
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}

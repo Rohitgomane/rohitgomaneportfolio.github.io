@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-container {
+    height: 80vh;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+
+img {
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+}
+.box-container .box {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transform-style: preserve-3d;
+    margin: 0px 150px 100px 0px;
+}
+.box-container .box:hover {
+    box-shadow: 0 50px 80px rgba(0, 0, 0, .2);
+}
+.box-container .box .imgBx {
+    position: absolute;
+   
+    width: 100%;
+    height: 100%;
+}
+.box-container .box .contentBx {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    width: 450px;
+    background: #fff;
+    text-align: center;
+    margin: 90px 0px 0px 30px;
+    transform: translateZ(20px) scaleY(0);
+    padding: 40px 25px;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.box-container .box:hover .contentBx {
+    transform: translateZ(50px) scaleY(1);
+    box-shadow: 0 50px 80px rgba(0, 0, 0, .2);
+}
+.box-container {
+    animation: transitionIn 0.7s ease-in-out;
+}
+.more {
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 12px;
+    background: orange;
+    transition: 0.2s;
+}
+.more:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+.pending {
+    font-size: 40px;
+    color: rgb(51, 51, 51);
+}
+.pending span {
+    opacity: 0;
+    animation: pending 2s linear infinite;
+}
+.pending span:nth-child(1) {
+    animation-delay: 0s;
+}
+.pending span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.pending span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes pending {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}

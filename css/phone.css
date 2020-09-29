@@ -1,0 +1,61 @@
+.phone-container {
+    position: absolute;
+    height: auto;
+    width: 60%;
+    right: -10%;
+
+}
+.body {
+    width: 85%;
+    height: 100%;
+    transform: rotate(-38deg) skew(25deg) scale(.8);
+    transition: 0.5s ease;
+    z-index: 2;
+
+}
+.bazel {
+    position: absolute;
+    top: 41%;
+    left: 4%;
+    width: 100%;
+    max-width: 78%;
+    height: auto;
+    opacity: 1;
+    transition: 0.4s ease;
+    z-index: -2;
+}
+.hover-phone {
+    cursor: pointer;
+    position: absolute;
+    top: 22%;
+    left: 24%;
+    height: 60%;
+    width: 37%;
+    z-index: 3;
+}
+.hover-phone:hover ~ .body {
+    transform: rotate(0deg) skew(0deg) scale(.8);
+}
+
+.hover-phone:hover ~ .bazel {
+    opacity: 0;
+    transform: rotate(53deg) skew(-25deg) scale(0.5);
+}
+
+
+.xd {
+    position: absolute;
+    top: 13%;
+    left: 27%;
+    width: 100%;
+    max-width: 32%;
+    height: auto;
+    transform: rotate(-38deg) skew(25deg) scale(.8);
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.hover-phone:hover ~ .xd {
+    transform: rotate(0deg) skew(0deg) scale(.8) translateX(-5%);
+}

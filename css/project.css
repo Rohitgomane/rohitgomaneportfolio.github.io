@@ -1,0 +1,137 @@
+.left-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.left-arrow img {
+    height: 20px;
+    width: 20px;
+}
+#about h1 {
+    position: absolute;
+    top: 10%;
+    font-size: 3vw;
+    color: white;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 11.71303074670571vw;
+    width: 21.961932650073205vw;
+    background: url("../images/project/p.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-size: 380px;
+    margin: 0px 20px 0px 20px;
+    transition: 1s ease;
+box-shadow:0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);
+}
+.container h3 {
+    position: absolute;
+    color: white;
+    font-size: 1.171303074670571vw;
+}
+.color {
+    position: absolute;
+    height: 160px;
+    width: 300px;
+    background: orange;
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+.container:hover .color {
+    opacity: 0;
+}
+.container:hover{
+    transform: translateY(-8px);
+    background-size: 450px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.671);
+    box-shadow:0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 8px 8px rgba(0,0,0,0.11),0 16px 16px rgba(0,0,0,0.11),0 32px 32px rgba(0,0,0,0.11);
+}
+.container-2 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 11.71303074670571vw;
+    width: 21.961932650073205vw;
+    background: url("../images/project/lamp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-size: 300px;
+    margin: 0px 20px 0px 20px;
+    transition: 1s ease;
+box-shadow:0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);
+}
+.container-2 h3 {
+    position: absolute;
+    color: white;
+    font-size: 1.171303074670571vw;
+}
+.color-2 {
+    position: absolute;
+    height: 160px;
+    width: 300px;
+    background: rgb(81, 155, 253);
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+.container-2:hover .color-2 {
+    opacity: 0;
+}
+.container-2:hover{
+    transform: translateY(-8px);
+    background-size: 350px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.671);
+    box-shadow:0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 8px 8px rgba(0,0,0,0.11),0 16px 16px rgba(0,0,0,0.11),0 32px 32px rgba(0,0,0,0.11);
+}
+.container-3 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 11.71303074670571vw;
+    width: 21.961932650073205vw;
+    background-image: url("../images/project/368.jpg");
+    background-color: rgb(115,192,186);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-size: 200px;
+    background-position: center;
+    margin: 0px 20px 0px 20px;
+    transition: 1s ease;
+box-shadow:0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15);
+}
+.container-3 h3 {
+    position: absolute;
+    color: white;
+    font-size: 1.171303074670571vw;
+}
+.color-3 {
+    position: absolute;
+    height: 160px;
+    width: 300px;
+    background: rgb(255, 106, 235);
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+.container-3:hover .color-3 {
+    opacity: 0;
+}
+.container-3:hover{
+    transform: translateY(-8px);
+    background-size: 250px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.671);
+    box-shadow:0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 8px 8px rgba(0,0,0,0.11),0 16px 16px rgba(0,0,0,0.11),0 32px 32px rgba(0,0,0,0.11);
+}

@@ -1,0 +1,117 @@
+#skills h1 {
+    position: absolute;
+    top: 10%;
+    font-size: 2.9282576866764276vw;
+    color: white;
+}
+
+
+.skill-container {
+    position: absolute;
+    height: 21.961932650073205vw;
+    width: 53.440702781844806vw;
+    top: 30%;
+    left: calc(50% - 25.62225475841874vw);
+    display: flex;
+  }
+  
+  .skill-card {
+    display: flex;
+    height: 20.497803806734993vw;
+    width: 14.641288433382138vw;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .skill-card:not(:first-child) {
+      margin-left: -3.6603221083455346vw;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-1.4641288433382138vw);
+    transition: 0.4s ease-out;
+  }
+  
+  .skill-card:hover ~ .skill-card {
+    position: relative;
+    left: 3.6603221083455346vw;
+    transition: 0.4s ease-out;
+  }
+  
+  .skill-title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 1.171303074670571vw;
+  }
+  
+  .skill-bar {
+    position: absolute;
+    top: 7.320644216691069vw;
+    left: 1.4641288433382138vw;
+    height: 0.36603221083455345vw;
+    width: 10.980966325036603vw;
+  }
+  .skill-perc {
+      position: absolute;
+      color: white;
+      font-size: 1.4641288433382138vw;
+      top: 70%;
+      left: 40%;
+      opacity: 0;
+      transition: 0.6s ease-out;
+  }
+  .skill-card:hover .skill-perc {
+      opacity: 1;
+  }
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .skill-card:hover .filledbar {
+    width: 8.784773060029282vw;
+    transition: 0.4s ease-out;
+  }
+  
+  .skill-circle {
+    position: absolute;
+    top: 10.980966325036603vw;
+    left: calc(50% - 4.392386530014641vw);
+  }
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #17141d;
+    stroke-width: 2px;
+  }
+  
+  .skill-card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }

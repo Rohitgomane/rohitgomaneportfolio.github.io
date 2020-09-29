@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="../tablet/tablet.css">
+</head>
+<body>
+
+    <section  class="scroll-banner" id="banner">
+        <div class="left-arrow" id="project-back" onclick="back_project()"><img src="images/left-arrow (1).png"></div>
+        <h4>Computer  Peripherals  Selling  System</h4>
+        <div class="dev-container">
+            <div class="device-container">
+                <div class="device-content" id="all-devices">
+                    
+                     <div class="desk-cont" id="desk">
+                         <img src="images/desktop.png" class="desktop">
+                        <div class="img-boxd"></div>
+                     </div>
+                   <div class="lap-cont" id="lap">
+                        <img src="images/laptop.png" class="laptop">
+                    <div class="img-boxl"></div>
+                    </div>
+                  <div class="tab-cont" id="tab">
+                        <img src="images/tablet.png" class="tablet">
+                      <div class="img-boxt"></div>
+                    </div>
+                   <div class="phone-cont" id="phone">
+                        <img src="images/phone.png" class="phone">
+                       <div class="img-boxp"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="device-button">
+                <button onclick="devices()"><img src="images/a.png"> <div class="device-name">ALL</div> </button>
+                <button onclick="laptop()"><img src="images/l.png"><div class="device-name">LAPTOP</div></button>
+                <button onclick="desktop()"><img src="images/d.png"><div class="device-name">DESKTOP</div></button>
+                <button onclick="tablet()"><img src="images/t.png"><div class="device-name">TABLET</div></button>
+                <button onclick="phone()"><img src="images/p.png"><div class="device-name">PHONE</div></button>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-container">
+        <h2>Scope Of This System</h2>
+        <p>This website is basically for server and deployed on the server site. The Online Shopping website is basically useful to company for selling computer products worldwide.This system will be applicable for company as well as wholesale shops, or any other Organization who wants to sell their products in international markets.
+            Customer can place online order from any place via internet. Company stores all items details, update items, price, discount etc.
+<br>
+            The online shopping is the part of internet to do online purchasing and selling product with electronic security, now day this is called as E-commerce. Customer can directly purchase the product online from his/her home through internet. Customer can see many products and details about the products which are not possible in current system. Customer can pay online through credit card there is no need to keep big cash in pocket and physically going to the shop.
+        </p>
+    </div>
+    <section class="language-used">
+        <h1>PROGRAMMING LANGUAGE USED</h1>
+        <div class="language-icon">
+            <img src="images/html.png">
+            <img src="images/css.png">
+            <img src="images/js.png">
+            <img src="images/php.png">
+        </div>
+    </section>
+    <section class="gallery-container">
+        <div class="gallery-box1"></div>
+        <div class="gallery-box2"></div>
+        <div class="gallery-box3"></div>
+        <div class="gallery-box4"></div>
+        <div class="gallery-box5"></div>
+        <div class="gallery-box6"></div>
+        <div class="gallery-box7"></div>
+        <div class="gallery-box8"></div>
+        <div class="gallery-box9"></div>
+        <div class="gallery-box10"></div>
+        <div class="gallery-box11"></div>
+        <div class="gallery-box12"></div>
+        <div class="gallery-box13"></div>
+    </section>
+    <script src="../js/project.js"></script>
+    <script>
+        const banner = document.querySelector('.scroll-banner');
+        window.addEventListener('scroll', function(){
+            const value = 800 - window.scrollY;
+            banner.style.clipPath = "circle("+ value +"px at center center)"
+        })
+    </script>
+    <script src="device.js"></script>
+</body>
+</html>

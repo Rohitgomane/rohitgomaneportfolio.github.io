@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-arrow" id="project-back" onclick="back_project()"><a href="../../card.html"><img src="/images/left-arrow (1).png"></a></div>
+
+    <div class="container">
+     
+        <div class="card">
+           
+            <div class="content">
+                <div class="circle" id="green"></div>
+            <div class="image">
+                <img src="shoe.png" id="imgbox">
+            </div>
+            <div class="name">
+                <h3>Nike Air</h3>
+            </div>
+            <button type="submit" onclick="show_hide()" id="explore">EXPLORE</button>
+    </div>
+    <div id="info">
+        <h2>Nike Air</h2>
+        <p>Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl 
+            tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et,
+             porttitor at sem. Nulla porttitor accumsan tincidunt. Quisque velit nisi,
+              pretium ut lacinia in, elementum id enim.</p>
+              <div class="color">
+                <img id="green" src="shoe.png" onclick='gallery(this)'></img>
+                  <img id="red" src="shoer.png" onclick='gallery(this)'></img>
+                  <img id="blue" src="shoeb.png" onclick='gallery(this)'></img>
+              </div>
+              <div class="buttons">
+                  <button type="submit" id="add">Add To Cart</button>
+              </div>
+    </div>
+</div>    
+
+
+</div>
+    <script src="hide.js"></script>
+    
+<script>
+    function gallery(smallimg)
+    {
+        var fullimg = document.getElementById("imgbox");
+        fullimg.src = smallimg.src;
+    }
+</script>
+</body>
+</html>

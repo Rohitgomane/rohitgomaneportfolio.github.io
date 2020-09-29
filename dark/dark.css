@@ -1,0 +1,82 @@
+
+.dark-night {
+    position: relative;
+    top: 15%;
+    left: 30%;
+    z-index: 3;
+}
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+.button-body {
+    position: relative;
+    cursor: pointer;
+    height: 2.9282576866764276vw;
+    width: 6.588579795021962vw;
+    border-radius: 2.1961932650073206vw;
+    background-color: #f6d327;
+    background-image: linear-gradient(270deg, #e16abc 10%, #25147e 90%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.14641288433382138vw;
+}
+.button-circle {
+    height: 2.562225475841874vw;
+    width: 2.562225475841874vw;
+    background-image: url("night.png");
+    background-size: 1.4641288433382138vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 1.4641288433382138vw;
+    border: 0.21961932650073207vw solid rgba(255, 255, 255, 0.959);
+    transform: translateX(3.6603221083455346vw);
+    box-shadow: inset 0 0 2.1961932650073206vw rgba(0, 0, 0, 0.1),
+                        0 1.4641288433382138vw 1.4641288433382138vw rgba(0, 0, 0, 0.2),
+                        0 0 0 0.07320644216691069vw rgba(255, 255, 255, 0.7),
+                        -0.07320644216691069vw 0.29282576866764276vw 0.36603221083455345vw rgba(0,0,0,0.6);
+    transition: 0.5s ease;
+}
+
+.checkbox:checked + .label .button-body .button-circle {
+    transform: translateX(0.07320644216691069vw);
+    background-image: url("sun2.png");
+}
+
+.checkbox:checked + .label .button-body {
+
+
+background-color: #f6d327;
+background-image: linear-gradient(270deg, #ffbe00 30%, #e076be 90%);
+}
+.checkbox:checked + .label .button-body .button-text2 {
+    opacity: 1;
+}
+
+.checkbox:checked + .label .button-body .button-text1 {
+    opacity: 0;
+}
+.button-text1 {
+    position: absolute;
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    font-size: 0.6588579795021962vw;
+    line-height: 0.7320644216691069vw;
+    left: 10%;
+    opacity: 1;
+    transition: 0.3s;
+}
+.button-text2 {
+    position: absolute;
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    font-size: 0.6588579795021962vw;
+    line-height: 0.7320644216691069vw;
+    right: 10%;
+    transition: 0.3s;
+    opacity: 0;
+}

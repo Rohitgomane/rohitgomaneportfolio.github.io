@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+}
+.left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 99;
+    animation: load-animation 0.7s ease-in;
+}
+.left-arrow img {
+    height: 3.6603221083455346vw;
+    width: 3.6603221083455346vw;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: load-animation 0.7s ease-in;
+}
+section .certificate {
+    height: 90%;
+    width: 80%;
+    background-color: #1e1d1b;
+    background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .certificate img {
+    height: 90%;
+    width: 90%;
+}
+
+
+@keyframes load-animation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    90% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    width:8px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}

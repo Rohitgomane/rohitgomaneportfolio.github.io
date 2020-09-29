@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-arrow" id="project-back" onclick="back_project()"><a href="../../card.html"><img src="/images/left-arrow (1).png"></a></div>
+
+
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <div id="underline"></div>
+            <ul class="nav-links" data-aos="fade-down">
+                <li class="nav-link"><a href="#home" id="h" onclick="home()">Home</a></li>
+                <li class="nav-link"><a href="#about" id="a" onclick="about()">About</a></li>
+                <li class="nav-link"><a href="#product" id="p" onclick="product()">Products</a></li>
+                <li class="nav-link"><a href="#gallery" id="g" onclick="gallery()">Gallery</a></li>
+                <li class="nav-link"><a href="#contact" id="c" onclick="contact()">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <img src="../images/cart.png" alt="Cart">
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="presentation">
+
+    <div class="container" data-aos="fade-up">
+        <div class="card">
+            <div class="face face1 background1">
+                <div class="content">
+                    <!--<img src="../card/koenigsegg.jpg" class="cardimage">-->
+                    <h3>koenigsegg One :1</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1 background2">
+                <div class="content">
+                  
+                    <h3>Bugatti Chiron</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1 background3">
+                <div class="content">
+                    
+                    <h3>Ferrari Fxxk</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="face face1 background4">
+                <div class="content">
+                    
+                    <h3>McLarean Senna</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1 background5">
+                <div class="content">
+                    
+                    <h3>Audi R8</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1 background6">
+                <div class="content">
+                    
+                    <h3>Lamborghini Urus</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        
+  
+    </div>
+
+
+
+
+        </section>
+    </main>
+
+
+
+
+
+    <script src="jQuery.js"></script>
+    <script src="aos.js"></script>
+    <script type="text/javascript">
+        AOS.init(
+            {
+                duration : 2000,
+            }
+        );
+    </script>
+    <script src="nav.js"></script>
+    <script>
+        var x = document.getElementById("h");
+        var y = document.getElementById("a");
+        var a = document.getElementById("p");
+        var b = document.getElementById("g");
+        var c = document.getElementById("c");
+        var z = document.getElementById("underline");
+        function home() {
+                
+                z.style.left = "58%";
+        }
+        function about() {
+                
+                z.style.left = "65%";
+        }
+        function product() {
+                
+                z.style.left = "73%";
+        }
+        function gallery() {
+                
+                z.style.left = "81%";
+        }
+        function contact() {
+                
+                z.style.left = "89%";
+        }
+        
+        </script>
+        <!-- Swiper JS -->
+  <script src="swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

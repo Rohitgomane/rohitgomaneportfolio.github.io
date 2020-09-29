@@ -1,0 +1,168 @@
+input[type=text] {
+    background: rgb(27, 27, 27);
+    height: 2.4890190336749636vw;
+    width: 14.641288433382138vw;
+    border: 0.07320644216691069vw solid rgb(36, 36, 36);
+    border-radius: 0.21961932650073207vw;
+    outline: none;
+    color: white;
+}
+textarea {
+    background: rgb(27, 27, 27);
+    border: 0.07320644216691069vw solid rgb(36, 36, 36);
+    border-radius: 0.21961932650073207vw;
+    height: 10.980966325036603vw;
+    width: 30.2vw;
+}
+label {
+    color: white;
+    font-size: 1.0248901903367496vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.send-button {
+    cursor: pointer;
+    height: 2.9282576866764276vw;
+    width: 7.320644216691069vw;
+    background: gold;
+    border: none;
+    border-radius: 1.4641288433382138vw;
+    color: black;
+    font-size: 0.9vw;
+}
+.contact {
+    height: 40.26354319180088vw;
+    width: 36.603221083455345vw;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.0980966325036603vw 1.0980966325036603vw 1.0980966325036603vw 1.0980966325036603vw;
+    border-top-left-radius: 0.36603221083455345vw;
+    border-bottom-left-radius: 0.36603221083455345vw;
+    margin-left: 15%;
+}
+.contact h6 {
+    color: gold;
+}
+.contact h1 {
+    color: white;
+    font-size: 2.1961932650073206vw;
+}
+.addr h1 {
+    color: white;
+    font-size: 2.1961932650073206vw;
+}
+.credentials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.name-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 1.4641288433382138vw;
+}
+.subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mail-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.addr {
+
+    height: 40.26354319180088vw;
+    width: 36.603221083455345vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background: black;
+    padding: 1.0980966325036603vw 1.0980966325036603vw 1.0980966325036603vw 1.0980966325036603vw;
+    border-top-right-radius: 0.36603221083455345vw;
+    border-bottom-right-radius: 0.36603221083455345vw;
+}
+.addr h6 {
+    color: gold;
+    font-size: 0.7320644216691069vw;
+}
+.logo-contact {
+    height: 13.177159590043924vw;
+    width: 13.177159590043924vw;
+    border-radius: 7.320644216691069vw;
+    background: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.392386530014641vw;
+    margin-left: 3.6603221083455346vw;
+}
+.logo-contact img {
+    height: 4.392386530014641vw;
+    width: 10.980966325036603vw;
+}
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.0248901903367496vw;
+}
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.0248901903367496vw;
+}
+.website {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.0248901903367496vw;
+}
+.icon-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.facebook , .instagram , .twitter {
+    cursor: pointer;
+    background: rgb(46, 46, 46);
+    padding: 0.36603221083455345vw 0.36603221083455345vw 0.36603221083455345vw 0.36603221083455345vw;
+    margin: 0px 0.7320644216691069vw 0px 0px;
+    border-radius: 0.29282576866764276vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook img{
+    height: 1.8301610541727673vw;
+    width: 1.8301610541727673vw;
+}
+.instagram img{
+    height: 1.8301610541727673vw;
+    width: 1.8301610541727673vw;
+}
+.twitter img{
+    height: 1.8301610541727673vw;
+    width: 1.8301610541727673vw;
+}

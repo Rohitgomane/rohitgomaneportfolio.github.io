@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/float.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/next.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="js/aos.css">
+    <link rel="stylesheet" href="tablet/tablet.css">
+    <link rel="stylesheet" href="phone/phone.css">
+    <link rel="stylesheet" href="dark/dark.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/JavaScript Main.js"></script>
+   
+</head>
+<body id="body-dark">
+
+
+
+    <div id="rg-logo"></div>
+   <section id="first">
+       <div id="quote">
+    <div class="content">
+        <ul class="flip">
+            <li id="flip1">EXCEPT THE PAINT</li>
+            <li id="flip2">DIGITAL DESIGN IS LIKE</li>
+        </ul>
+    </div>
+    <div class="content">
+        <ul class="fl" id="flip2">
+            <li id="flip3">NEVER DRIES</li>
+            <li id="flip4">PAINTING,</li>
+        </ul>
+    </div>
+       </div>
+       <a href="#second">
+        <div class="arrow" data-aos="fade-down">
+            <div class="words">
+               <h5 id="work-text">WORKS</h5>
+                <h4 id="portfolio-text">Portfolio</h4>
+            </div>
+            
+            <div class="arrow-img">
+                <img src="images/down-thick.png" class="arrow-1">
+                <img src="images/down-thin.png" class="arrow-2">
+            </div>
+        </div>
+        </a>
+        <div class="box">
+            <div><h3 class="floating-text" id="floating-text1">CSS</h3></div>
+            <div><h3 class="floating-text" id="floating-text2">JS</h3></div>
+            <div><h3 class="floating-text" id="floating-text3">REACT</h3></div>
+            <div><h3 class="floating-text" id="floating-text4">HTML</h3></div>
+            <div><h3 class="floating-text" id="floating-text5">Python</h3></div>
+            <div><h3 class="floating-text" id="floating-text6">SCSS</h3></div>
+            <div><h3 class="floating-text" id="floating-text7">JAVA</h3></div>
+            <div><h3 class="floating-text" id="floating-text8">C++</h3></div>
+            <div><h3 class="floating-text" id="floating-text9">PHP</h3></div>
+            <div><h3 class="floating-text" id="floating-text10">SQL</h3></div>
+        </div>
+    </section>
+    <header id="header" data-aos="fade-right">
+        <nav id="nav">
+            <div class="button" onclick="home()" id="home-button" onmouseover="background0()" onmouseout="background1()">
+                <div class="icon-name">
+                    <h6>HOME</h6>
+                </div>
+            </div>
+            <div class="button" onclick="about()" id="project-button">
+                <div class="icon-name">
+                    <h6>PROJECTS</h6>
+                </div>
+            </div>
+            <div class="button" onclick="skills()" id="skill-button">
+                <div class="icon-name">
+                    <h6>SKILLS</h6>
+                </div>
+            </div>
+            <div class="button" onclick="project()" id="about-button">
+                <div class="icon-name">
+                    <h6>ABOUT</h6>
+                </div>
+            </div>
+            <div class="button" onclick="contact()" id="contact-button">
+                <div class="icon-name">
+                    <h6>CONTACT</h6>
+                </div>
+            </div>
+        </nav>
+        
+    <div class="dark-night">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">   
+         <div class="button-body" onclick="burger()">
+          
+             <div class="button-circle"></div>
+              <div class="button-text1">NIGHT<br>MODE</div>
+              <div class="button-text2">DAY<br>MODE</div>
+           
+        </div>
+        </label>
+        </div>
+    </header>
+
+    <section id="second" data-aos="zoom-in">
+        <div class="picker" id="picker">
+            <img src="images/cancel.png"class="cancel" onclick="cancel()">
+            Red <input type="range" min="0" max="255" step="1" id="red" value="255">
+            Green <input type="range" min="0" max="255" step="1" id="green" value="255">
+            Blue <input type="range" min="0" max="255" step="1" id="blue" value="255">
+        </div>
+        <div class="content-container">
+            <div id="home" data-aos="zoom-in">
+                <div id="html-code">
+                    <h3>&lt;html&gt;</h3>
+                    <h3>&lt;style&gt;</h3>
+                    <h3 onclick="picker()">h1 {color: white;}</h3>
+                    <h3>&lt;/style&gt;</h3>
+                    <h3>&lt;body&gt;</h3>
+                    <h3>&lt;h1&gt;</h3>
+                </div>
+                
+                <div class="word-container">
+                    <div class="word-1" id="words1">
+                        <span id="h">H</span>
+                        <span id="i">i</span>
+                        <span id=",">,</span>
+                    </div>
+                    <div class="word-2" id="words2">
+                        <span id="rri">I</span>
+                        <span id="rrri">'</span>
+                        <span id="m">m</span>
+                        <span id="r">&nbsp;R</span>
+                        <span id="o">o</span>
+                        <span id="rh">h</span>
+                        <span id="ri">i</span>
+                        <span id="t">t</span>
+                        <span id="r,">,</span>
+                    </div>
+                    <div class="word-3" id="words3">
+                        <span id="hw">w</span>
+                        <span id="he">e</span>
+                        <span id="hb">b</span>
+                        <span id="hd">&nbsp;d</span>
+                        <span id="hee">e</span>
+                        <span id="hv">v</span>
+                        <span id="heee">e</span>
+                        <span id="hl">l</span>
+                        <span id="ho">o</span>
+                        <span id="hp">p</span>
+                        <span id="heeee">e</span>
+                        <span id="hr">r</span>
+                        <span id="h.">.</span>
+                    </div>
+                    <h4 class="fullstack">&lt;/Fullstack Developer&gt;</h4>
+                    </div> 
+                    <div id="html-code1">
+                        <h3>&lt;/h1&gt;</h3>
+                        <h3>&lt;/body&gt;</h3>
+                        <h3>&lt;/html&gt;</h3>
+                    </div>
+               <div class="phone-container">
+                <div class="hover-phone"></div>
+                   <img src="images/phone/iphone.png" class="body">
+                   <img src="images/phone/phone-bazel.png" class="bazel">
+                   <img src="images/xd.png" class="xd">
+               </div>
+            </div>
+
+            <div id="about" data-aos="zoom-in">
+                    <h1 id="project-heading">MY PROJECTS</h1>
+                <div class="container" onclick="my_project()" id="project-box-1">
+                        <div class="color"></div>
+                        <h3>Personal Projects</h3>
+                    </div>
+               
+                
+                    <div class="container-2" id="project-box-2" id='bt' 
+                    onclick='creative(this)'>
+                            <div class="color-2"></div>
+                            <h3>Creative</h3>
+                    </div>
+              
+             
+                    <div class="container-3" id="project-box-3" id='bt' 
+                    onclick='achieve(this)'>
+                            <div class="color-3"></div>
+                            <h3>Achievements</h3>
+                    </div>
+                
+                 
+                <div class="swiper-container"  id="project-container">
+                    <div class="left-arrow" id="project-back" onclick="back_project()"><img src="images/left-arrow (1).png"></div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" id="slider-background"> 
+                
+                
+                        <div class="swiper-box-container">
+                        <div class="swiper-box">
+                            <div class="swiper-imgBx">
+                                <img src="device/gallery/2.jpg">
+                            </div>
+                            <div class="swiper-contentBx">
+                                <h2>Computer Peripherals Selling System</h2>
+                                <p>The main objective of this system is to manage the details of Computer,Seller,Employee,Department,Company. 
+                                    It manage all the information about Computer, Seller, Customer.
+                                </p>
+                               <button class="more" id='bt' 
+                                    onclick='redirect_Page(this)'>More</button>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                  
+                  
+                  
+                  </div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                      <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                
+                
+
+            </div>
+
+            <div id="skills" data-aos="zoom-in">
+              
+                <h1 id="skill-heading">SKILLS</h1>
+<div class="skill-container">
+    <div class="skill-card">
+      <h3 class="skill-title">HTML</h3>
+      <div class="skill-bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="skill-circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="4.392386530014641vw" cy="4.392386530014641vw" r="3.6603221083455346vw"/>
+      </svg>
+      </div>
+      <div class="skill-perc">90%</div>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-title">CSS</h3>
+      <div class="skill-bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="skill-circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="4.392386530014641vw" cy="4.392386530014641vw" r="3.6603221083455346vw"/>
+      </svg>
+      </div>
+      <div class="skill-perc">90%</div>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-title">JS</h3>
+      <div class="skill-bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="skill-circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="4.392386530014641vw" cy="4.392386530014641vw" r="3.6603221083455346vw"/>
+      </svg>
+      </div>
+      <div class="skill-perc">70%</div>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-title">REACT JS</h3>
+      <div class="skill-bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+      <div class="skill-circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke" cx="4.392386530014641vw" cy="4.392386530014641vw" r="3.6603221083455346vw"/>
+      </svg>
+      </div>
+      <div class="skill-perc">60%</div>
+    </div>
+
+    <div class="skill-card">
+        <h3 class="skill-title">PHP</h3>
+        <div class="skill-bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+        <div class="skill-circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle class="stroke" cx="4.392386530014641vw" cy="4.392386530014641vw" r="3.6603221083455346vw"/>
+        </svg>
+        </div>
+        <div class="skill-perc">80%</div>
+      </div>
+
+  </div>
+  
+
+            </div>
+            
+            <div id="project" data-aos="zoom-in">
+                <div class="photo">
+      
+                </div>
+                <div class="my-info">
+                    <h1>About Me</h1>
+                    <h5>I'm a Front End as well as Back End Developer.</h5>
+                    <p>I enjoy creating complex design and turning them into beautiful and interactive design.</p>
+                    <p>When i'm not coding or editing photos. you'll find me in the gym or playing video games.</p>
+                    <div class="media-icon">
+                        <div class="facebook-media" onclick="window.location.href='https://www.facebook.com/rohit.gomane.9/';"></div>
+                        <div class="instagram-media" onclick="window.location.href='https://www.instagram.com/gomanerohit/?hl=en';"></div>
+                        <div class="twitter-media" onclick="window.location.href='https://twitter.com/RohitGomane';"></div>
+                        <div class="linkedin-media"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="contact" data-aos="zoom-in">
+                <div class="contact" id="contact1">
+                    <h6>GET IN TOUCH.</h6>
+                    <h1 id="contact-heading">Contact Form</h1>
+                    <div class="credentials">
+                        <div class="name-box">
+                            <label id="name-contact">Name</label>
+                            <input type="text" name="name" class="name">
+                        </div>
+                        <div class="mail-box">
+                            <label id="mail-contact">Email</label>
+                            <input type="text" name="mail" class="mail">
+                        </div>          
+                    </div>
+                    <div class="subject">
+                        <label id="sub-contact">Subject</label>
+                        <input type="text" name="sub" class="sub">
+                    </div>
+                    <div class="message">
+                        <label id="msg-contact">Message</label>
+                        <textarea name="msg" class="msg"></textarea>
+                    </div>
+                    <button class="send-button">Send Email</button>
+                </div>
+                <div class="addr" id="address">
+                    <h6>CONTACT.</h6>
+                    <h1 id="add-heading">OTHERS</h1>
+                    <div class="logo-contact">
+                        <img src="images/rglogo.png">
+                    </div>
+                    <div class="address">
+                        <label id="addr-name">ADDRESS</label>
+                        <label id="addr-value">Example example example</label>
+                    </div>
+                    <div class="mobile">
+                        <label id="addr-mobile">MOBILE</label>
+                        <label  id="addr-no">(000) 111 222 2222</label>
+                    </div>
+                    <div class="website">
+                        <label id="addr-website">WEBSITE</label>
+                        <label id="addr-link">https://portfolio.com</label>
+                    </div>
+                    <div class="icon-box">
+                        <div class="facebook" onclick="window.location.href='https://www.facebook.com/rohit.gomane.9/';">
+                            <img src="images/icon/facebook.png">
+                        </div>
+                        <div class="instagram" onclick="window.location.href='https://www.instagram.com/gomanerohit/?hl=en';">
+                            <img src="images/icon/instagram.png">
+                        </div>
+                        <div class="twitter" onclick="window.location.href='https://twitter.com/RohitGomane';">
+                            <img src="images/icon/twitter.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="dark/dark.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init(
+            {
+                duration : 2000,
+            }
+        );
+    </script>
+
+    
+    <script src="js/color.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/screen.js">  
+        document.getElementById("home").click();
+        </script>
+
+
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".swiper-box"), {
+        max: 10,
+        speed: 400
+    });
+    
+</script>
+
+
+         <script src="js/swiper-bundle.min.js"></script>
+
+         <!-- Initialize Swiper -->
+         <script>
+           var swiper = new Swiper('.swiper-container', {
+             navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+             },
+           });
+         </script>
+
+<script>
+    var proje = document.getElementById("project-container");
+    // Using ES6 feature.
+    let redirect_Page = (ele) => {
+    	
+        proje.style.transform = "scale(0)";
+    proje.style.opacity = "0";
+        
+        let tID = setTimeout(function () {
+
+			// redirect page.
+            window.location.href = 'device/index.html';
+            
+            window.clearTimeout(tID);		// clear time out.
+            
+        }, 350);	// call function after 5000 milliseconds or 5 seconds
+    }
+</script>
+
+<script>
+  var ab = document.getElementById("about");
+    // Using ES6 feature.
+    let creative = (ele) => {
+        ab.style.transform = "scale(0)";
+    ab.style.opacity = "0";
+        let tID = setTimeout(function () {
+
+			// redirect page.
+            window.location.href = 'creative-card/card.html';
+            
+            window.clearTimeout(tID);		// clear time out.
+            
+        }, 350);	// call function after 5000 milliseconds or 5 seconds
+    }
+</script>
+
+<script>
+    var ab = document.getElementById("about");
+      // Using ES6 feature.
+      let achieve = (ele) => {
+          ab.style.transform = "scale(0)";
+      ab.style.opacity = "0";
+          let tID = setTimeout(function () {
+  
+              // redirect page.
+              window.location.href = 'achievements/index.html';
+              
+              window.clearTimeout(tID);		// clear time out.
+              
+          }, 350);	// call function after 5000 milliseconds or 5 seconds
+      }
+  </script>
+</body>
+</html>

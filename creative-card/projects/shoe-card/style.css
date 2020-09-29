@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    outline: none;
+}
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 99;
+}
+.left-arrow img {
+    height: 50px;
+    width: 50px;
+}
+
+.container {
+    position: relative;
+    top: 150px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: load-animation 0.7s ease-in;
+}
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+.card {
+    position: relative;
+    height: 350px;
+    width: auto;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.3s ease;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card:hover {
+  height: 380px;
+  transform: translateY(-20px);
+  
+}
+#info {
+    width: 0px;
+  
+    transition: 0.3s ease;  
+}
+#info h2 {
+    font-size: 30px;
+    color: white;
+}
+#info p{
+    font-size: 12px;
+    color: white;
+}
+#info .color {
+   margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+.buttons #add {
+    margin: 20px 0px 0px 0px;
+    padding: 5px 15px 5px 15px;
+    background: chartreuse;
+    color: rgb(34, 34, 34);
+}
+.color #green {
+    cursor: pointer;
+    background: chartreuse;
+    height: 30px;
+    width: 30px;
+    border: 2px white solid;
+    border-radius: 20px;
+    margin: 0px 10px 0px 0px;
+}
+
+.color #red {
+    cursor: pointer;
+    background: red;
+    height: 30px;
+    width: 30px;
+    border: 2px white solid;
+    border-radius: 20px;
+    margin: 0px 10px 0px 0px;
+}
+
+.color #blue {
+    cursor: pointer;
+    background: blue;
+    height: 30px;
+    width: 30px;
+    border: 2px white solid;
+    border-radius: 20px;
+}
+.circle {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    background: chartreuse;
+    top: -130px;
+    right: -120px;
+    transition: 0.3s ease;
+}
+.card:hover .circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 300px;
+    transform: translateY(-70px);
+}
+.image {
+    position: relative;
+    top: 0px;
+    margin: 10px 10px 10px 10px;
+   transform: rotate(-30deg);
+   transition: 0.4s ease;
+}
+.card:hover .image {
+    position: relative;
+    top: -80px;
+    transform: rotate(0deg);
+}
+.image img {
+    height: 38vh;
+    width: 38vh;
+}
+.name h3 {
+    color: white;
+    font-size: 30px;
+    transition: 0.4s ease;
+}
+.card:hover .name h3 {
+   transform: translateY(-80px);
+}
+button {
+    padding: 8px 50px 8px 50px ;
+    background: transparent;
+    border: 1px greenyellow solid;
+    color: greenyellow;
+    border-radius: 2px;
+    font-size: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+.card:hover button {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+@keyframes load-animation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,298 @@
+@media screen and (max-width: 768px) {
+
+    header {
+        position: absolute;
+        left: 0%;
+        height: 5%;
+        width: 100%;
+        background: rgb(12, 12, 12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    
+    }
+    
+nav {
+    height: 100%;
+    width: 60%;
+    background: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button:nth-child(1) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/home-but.png");
+    background-size: 4.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(1):hover {
+    background-image: none;
+}
+
+.button:nth-child(2) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/home-but.png");
+    background-size: 4.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(2):hover {
+    background-image: none;
+}
+
+.button:nth-child(3) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/home-but.png");
+    background-size: 4.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(3):hover {
+    background-image: none;
+}
+
+.button:nth-child(4) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/home-but.png");
+    background-size: 4.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(4):hover {
+    background-image: none;
+}
+
+.button:nth-child(5) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/home-but.png");
+    background-size: 4.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(5):hover {
+    background-image: none;
+}
+
+
+
+    #about {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 1s ease;
+    }
+    
+#about h1 {
+    position: absolute;
+    top: 30%;
+    font-size: 6vw;
+    color: white;
+}
+    .container {
+        margin: 20px 20px 0px 20px;
+    }
+    .container-2 {
+        margin: 20px 20px 0px 20px;
+    }
+    .container-3 {
+        margin: 20px 20px 0px 20px;
+    }
+
+#home {
+    position: relative;
+    bottom: 18%;
+}
+
+
+
+.word-container {
+    position:relative;
+    left: 1.5%;
+    line-height: 8.31918008784773vw;
+}
+.word-1 {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 10%;
+    font-size: 8.24597364568082vw;
+    color: white;
+    perspective: 1000px; 
+    margin: 0% 0% 0% 12%;
+}
+.word-2 {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 8.24597364568082vw;
+    color: white;
+    perspective: 1000px;
+    margin: 0% 0% 0% 12%; 
+}
+.word-3 {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 8.24597364568082vw;
+    color: white;
+    perspective: 1000px; 
+    margin: 0% 0% 0% 12%;
+}
+
+
+
+span {
+    font-family: 'Poppins';
+    user-select: none;
+}
+span:hover {
+    animation: shrinkjump 0.7s ease-in-out;
+    color: cyan;
+}
+ h4 {
+     position: absolute;
+     top: 97%;
+    color: rgb(126, 126, 126);
+    font-family: 'Helvetica';
+    font-weight: 600;
+    margin: 0% 0% 0% 42%;
+    letter-spacing: 0.29282576866764276vw;
+    user-select: none;
+}
+#html-code h3 {
+    color: rgb(75, 75, 75);
+    font-family: 'La Belle Aurore', cursive;
+    font-weight: 100;
+    line-height: 190%;
+    font-size:  3.3177159590043923vw;
+}
+#html-code1 h3 {
+    color: rgb(75, 75, 75);
+    font-family: 'La Belle Aurore', cursive;
+    font-weight: 100;
+    user-select: none;
+    font-size:  3.3177159590043923vw;
+}
+#html-code h3:nth-child(3) {
+    cursor: pointer;
+    margin: 0% 0% 0% 10%;
+    animation: glow 2s ease infinite;
+}
+#html-code h3:nth-child(5) {
+    margin: 0% 0% 0% 10%;
+}
+#html-code h3:nth-child(6) {
+    margin: 0% 0% 0% 20%;
+}
+
+#html-code1 h3:nth-child(1) {
+    margin: 0% 0% 0% 20%;
+}
+#html-code1 h3:nth-child(2) {
+    margin: 0% 0% 0% 10%;
+}
+#html-code1 {
+    position: relative;
+    width: 20%;
+    left: 3%;
+    font-size:  1.3177159590043923vw;
+}
+.fullstack {
+    font-size: 2.171303074670571vw;
+}
+
+.phone-container {
+    position: absolute;
+    top: 50%;
+    left: -32%;
+    height: auto;
+    width: 200%;
+    right: -10%;
+    opacity: 0.5;
+}
+
+.body {
+    transform: rotate(0deg) skew(0deg) scale(.8);
+}
+.bazel {
+    opacity: 0;
+}
+.xd {
+    transform: rotate(0deg) skew(0deg) scale(.8) translateX(-5%);
+}
+section .certificate {
+    height: 22%;
+    width: 80%;
+    background-color: #1e1d1b;
+    background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-night {
+    position: relative;
+   transform: translateX(14.248901903367496vw) translateY(-5.1961932650073206vw);
+    z-index: 3;
+}
+
+}

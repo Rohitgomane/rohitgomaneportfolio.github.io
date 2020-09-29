@@ -1,0 +1,198 @@
+@media screen and (max-width: 1060px) {
+    header {
+        position: absolute;
+        left: 0%;
+        height: 5%;
+        width: 100%;
+        background: rgb(170, 88, 88);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    
+nav {
+    height: 100%;
+    width: 60%;
+    background: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: translateY(1.4641288433382138vw);
+}
+
+.dark-night {
+    position: relative;
+   transform: translateX(10.248901903367496vw) translateY(-2.1961932650073206vw);
+    z-index: 3;
+}
+.button:nth-child(1) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/home-but.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(1):hover {
+    background-image: none;
+}
+.button:nth-child(2) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/project.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(2):hover {
+    background-image: none;
+}
+.button:nth-child(3) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/pencil.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(3):hover {
+    background-image: none;
+}
+.button:nth-child(4) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/about.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(4):hover {
+    background-image: none;
+}
+.button:nth-child(5) {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/nav/contact.png");
+    background-size: 2.2vw;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+.button:nth-child(5):hover {
+    background-image: none;
+}
+
+
+.icon-name {
+    position: absolute;
+    color: rgb(0, 238, 255);
+    font-size: 1.3177159590043923vw;
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.button:hover .icon-name {
+    opacity: 0;
+}
+
+.my-info {
+    position: absolute;
+    height: 32%;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.photo {
+    position: absolute;
+    height: 10.980966325036603vw;
+    width: 10.980966325036603vw;
+    background: url("../images/about/rohit-dripping.jpg");
+    background-size: cover;
+    border-radius: 10.980966325036603vw;
+    box-shadow: -0.36603221083455345vw 0.36603221083455345vw 0.36603221083455345vw rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 30%;
+    transition: 0.4s ease;
+}
+#about h1 {
+    top: 30%;
+}
+
+#skills h1 {
+    top: 30%;
+    left: 42%;
+}
+#skills .skill-container {
+    top: 40%;
+    left: 22%;
+} 
+
+.device-container .device-content .phone-cont {
+    position: absolute;
+    max-height: 100%;
+    max-width: 10.2%;
+    top: 49.1%;
+    left: 88.9%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.3s;
+}
+
+section .certificate {
+    height: 40%;
+    width: 80%;
+    background-color: #1e1d1b;
+    background-image: linear-gradient(315deg, #1e1d1b 0%, #cc9934 74%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+}

@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+  
+    margin: auto;
+    align-items: center;
+    background: #c36cbb;
+}
+.burger {
+    display: none;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+.burger div {
+    width:30px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+    transition: all 0.3s ease;
+   
+}
+
+.logo-container, .nav-links, .cart {
+    display: flex;
+
+}
+
+.logo-container {
+      
+        flex:1;
+        
+}
+.rg {
+    height: 50px;
+    width: 40px;
+}
+.logo {
+    font-weight: 400;
+    margin: 5px;
+}
+
+nav {
+      
+        flex: 2;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cart {
+      justify-content: flex-end;
+        flex: 1;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction {
+    
+    flex:1;
+}
+.intro-text h1 {
+    font-size: 40px;
+    font-weight: 100;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slide 1.5s ease 1;
+
+
+}
+.intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+    animation: slide 1.5s ease 1;
+}
+.cover{
+    flex: 1;
+}
+.cover img {
+    height: 40vh;
+    animation: drop 1.5s ease;
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+.explore {
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 16px;
+    transition: 0.7s ease;
+    animation: slide 1.5s ease 1;
+}
+.addcart {
+
+    background-color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 10px 0px 0px 10px;
+    /*How to add shadow to png*/
+    filter: drop-shadow(0px 2px 1px black);
+    transition: 0.7s ease;
+    animation: slide 1.5s ease 1;
+}
+.explore:hover {
+    background-color: #c36cbb;
+    border: none;
+    color: white;    
+}
+.addcart:hover {
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform:translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform:translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        overflow-x: hidden;
+    }
+    .presentation {
+        flex-direction: column;
+    }
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 7vh;
+        width: 30%;
+        background-color: #c36cbb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
