@@ -76,11 +76,11 @@ function burger() {
     if(abc==1)
     {
         bodyback.style.background = "black";
-        Icon1.style.backgroundImage = "url('home1.png')";
-        Icon2.style.backgroundImage = "url('project1.png')";
-        Icon3.style.backgroundImage = "url('pencil1.png')";
-        Icon4.style.backgroundImage = "url('info1.png')";
-        Icon5.style.backgroundImage = "url('contact1.png')";
+        Icon1.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/home1.png')";
+        Icon2.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/project1.png')";
+        Icon3.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/pencil1.png')";
+        Icon4.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/info1.png')";
+        Icon5.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/contact1.png')";
         header.style.background="rgba(12, 12, 12, 1)";
         header.style.boxShadow = "0px 0px 0px black";
         header.style.transition = "0.5s ease";
@@ -211,11 +211,11 @@ function burger() {
     }
     else {
         bodyback.style.background = "white";
-        Icon1.style.backgroundImage = "url('home.png')";
-        Icon2.style.backgroundImage = "url('project.png')";
-        Icon3.style.backgroundImage = "url('pencil.png')";
-        Icon4.style.backgroundImage = "url('info.png')";
-        Icon5.style.backgroundImage = "url('contact.png')";
+        Icon1.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/home.png')";
+        Icon2.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/project.png')";
+        Icon3.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/pencil.png')";
+        Icon4.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/info.png')";
+        Icon5.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/navbar/contact.png')";
         header.style.background = "rgba(255, 255, 255, 1)";
         header.style.boxShadow = "10px 0px 5px grey";
         header.style.transition = "0.5s ease";
