@@ -274,7 +274,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 110%;
+    font-size: 1.1vw;
     font-weight: 600;
     opacity: 0;
     transition: 0.5s;

@@ -9,6 +9,7 @@ var changeIcon2 = document.getElementById("project-button");
 var changeIcon3 = document.getElementById("skill-button"); 
 var changeIcon4 = document.getElementById("about-button"); 
 var changeIcon5 = document.getElementById("contact-button"); 
+var abc;
 function home()
  {
     x.style.opacity = "1";
@@ -26,24 +27,26 @@ function home()
     z.style.zIndex = "-10";
     a.style.zIndex = "-10";
     b.style.zIndex = "-10";
-    changeIcon1.style.backgroundImage = "url(../navbar/home2.png)";
-      if(abc==1) {
-         changeIcon2.style.backgroundImage = "url(../navbar/project.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact.png)";
-      }
-      else {
-         changeIcon2.style.backgroundImage = "url(../navbar/project1.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil1.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info1.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact1.png)";
-      }
-      changeIcon1.style.transition = "0.5s ease";
-      changeIcon2.style.transition = "0.5s ease";
-      changeIcon3.style.transition = "0.5s ease";
-      changeIcon4.style.transition = "0.5s ease";
-      changeIcon5.style.transition = "0.5s ease";
+
+    changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home2.png')";
+    if(abc==1) {
+       changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project.png')";
+       changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info.png')";
+       changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact.png')";
+    }
+    else {
+       changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project1.png')";
+       changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil1.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info1.png')";
+       changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact1.png')";
+    }
+    changeIcon1.style.transition = "0.5s ease";
+    changeIcon2.style.transition = "0.5s ease";
+    changeIcon3.style.transition = "0.5s ease";
+    changeIcon4.style.transition = "0.5s ease";
+    changeIcon5.style.transition = "0.5s ease";
+   
  }
  function about()
  {
@@ -62,26 +65,26 @@ function home()
     z.style.zIndex = "-10";
     a.style.zIndex = "-10";
     b.style.zIndex = "-10";
-    changeIcon2.style.backgroundImage = "url(../navbar/project2.png)";
-      if(abc==1) {
-         changeIcon1.style.backgroundImage = "url(../navbar/home.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact.png)";
-      }
-      else {
-         changeIcon1.style.backgroundImage = "url(../navbar/home1.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil1.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info1.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact1.png)";
-      }
-    
-      changeIcon1.style.transition = "0.5s ease";
-      changeIcon2.style.transition = "0.5s ease";
-      changeIcon3.style.transition = "0.5s ease";
-      changeIcon4.style.transition = "0.5s ease";
-      changeIcon5.style.transition = "0.5s ease";
+   
+    changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project2.png')";
+    if(abc==1) {
+       changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home.png')";
+       changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info.png')";
+       changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact.png')";
+    }
+    else {
+       changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home1.png')";
+       changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil1.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info1.png')";
+       changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact1.png')";
+    }
   
+    changeIcon1.style.transition = "0.5s ease";
+    changeIcon2.style.transition = "0.5s ease";
+    changeIcon3.style.transition = "0.5s ease";
+    changeIcon4.style.transition = "0.5s ease";
+    changeIcon5.style.transition = "0.5s ease";
  }
  
  function skills()
@@ -101,25 +104,28 @@ function home()
     z.style.zIndex = "10";
     a.style.zIndex = "-10";
     b.style.zIndex = "-10";
-    changeIcon3.style.backgroundImage = "url(../navbar/pencil2.png)";
-      if(abc==1) {
-         changeIcon1.style.backgroundImage = "url(../navbar/home.png)";
-         changeIcon2.style.backgroundImage = "url(../navbar/project.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact.png)";
-      }
-      else {
-         changeIcon1.style.backgroundImage = "url(../navbar/home1.png)";
-         changeIcon2.style.backgroundImage = "url(../navbar/project1.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info1.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact1.png)";
-      }
-    
-      changeIcon1.style.transition = "0.5s ease";
-      changeIcon2.style.transition = "0.5s ease";
-      changeIcon3.style.transition = "0.5s ease";
-      changeIcon4.style.transition = "0.5s ease";
-      changeIcon5.style.transition = "0.5s ease";
+  
+    changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil2.png')";
+    if(abc==1) {
+       changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home.png')";
+       changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info.png')";
+       changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact.png')";
+    }
+    else {
+       changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home1.png')";
+       changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project1.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info1.png')";
+       changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact1.png')";
+    }
+  
+    changeIcon1.style.transition = "0.5s ease";
+    changeIcon2.style.transition = "0.5s ease";
+    changeIcon3.style.transition = "0.5s ease";
+    changeIcon4.style.transition = "0.5s ease";
+    changeIcon5.style.transition = "0.5s ease";
+
+
  }
  
  function project()
@@ -139,24 +145,27 @@ function home()
     z.style.zIndex = "-10";
     a.style.zIndex = "10";
     b.style.zIndex = "-10";
-    changeIcon4.style.backgroundImage = "url(../navbar/info2.png)";
+
+    changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info2.png')";
       if(abc==1) {
-         changeIcon1.style.backgroundImage = "url(../navbar/home.png)";
-         changeIcon2.style.backgroundImage = "url(../navbar/project.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact.png)";
+         changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home.png')";
+         changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project.png')";
+         changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil.png')";
+         changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact.png')";
       }
       else {
-         changeIcon1.style.backgroundImage = "url(../navbar/home1.png)";
-         changeIcon2.style.backgroundImage = "url(../navbar/project1.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil1.png)";
-         changeIcon5.style.backgroundImage = "url(../navbar/contact1.png)";
+         changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home1.png')";
+         changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project1.png')";
+         changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil1.png')";
+         changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact1.png')";
       }
       changeIcon1.style.transition = "0.5s ease";
       changeIcon2.style.transition = "0.5s ease";
       changeIcon3.style.transition = "0.5s ease";
       changeIcon4.style.transition = "0.5s ease";
       changeIcon5.style.transition = "0.5s ease";
+
+
  }
  
  function contact()
@@ -176,23 +185,27 @@ function home()
     z.style.zIndex = "-10";
     a.style.zIndex = "-10";
     b.style.zIndex = "10";
-    changeIcon5.style.backgroundImage = "url(../navbar/contact2.png)";
-      if(abc==1) {
-         changeIcon1.style.backgroundImage = "url(../navbar/home.png)";
-         changeIcon2.style.backgroundImage = "url(../navbar/project.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info.png)";
-      }
-      else {
-         changeIcon1.style.backgroundImage = "url(../navbar/home1.png)";
-         changeIcon2.style.backgroundImage = "url(../navbar/project1.png)";
-         changeIcon3.style.backgroundImage = "url(../navbar/pencil1.png)";
-         changeIcon4.style.backgroundImage = "url(../navbar/info1.png)";
-      }
-      changeIcon1.style.transition = "0.5s ease";
-      changeIcon2.style.transition = "0.5s ease";
-      changeIcon3.style.transition = "0.5s ease";
-      changeIcon4.style.transition = "0.5s ease";
-      changeIcon5.style.transition = "0.5s ease";
+  
+
+    changeIcon5.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/contact2.png')";
+    if(abc==1) {
+       changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home.png')";
+       changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project.png')";
+       changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info.png')";
+    }
+    else {
+       changeIcon1.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/home1.png')";
+       changeIcon2.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/project1.png')";
+       changeIcon3.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/pencil1.png')";
+       changeIcon4.style.backgroundImage = "url('C:/Users/DELL/Documents/GitHub/rohitgomaneportfolio.github.io/navbar/info1.png')";
+    }
+    changeIcon1.style.transition = "0.5s ease";
+    changeIcon2.style.transition = "0.5s ease";
+    changeIcon3.style.transition = "0.5s ease";
+    changeIcon4.style.transition = "0.5s ease";
+    changeIcon5.style.transition = "0.5s ease";
+
+
  }
  
