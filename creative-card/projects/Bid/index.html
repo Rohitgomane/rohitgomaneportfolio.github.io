@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="first">
+        <div id="slide">
+        <div class="bid" id="bid" onmouseover="bid()" onmouseout="bido()">
+            <div class="content1">
+                <img src="auction_gavel.png">
+                <h3>YOU WANT TO</h3>
+                <h2>BID?</h2>
+                <button class="show1" onclick="bid_home()">SHOW ME</button>
+            </div>
+        </div>
+        <div class="sell" id="sell" onmouseover="sell()" onmouseout="sello()">
+            <div class="content2">
+                <img src="trade.png">
+                <h3>YOU WANT TO</h3>
+                <h2>SELL?</h2>
+                <button class="show2" onclick="sell_home()">SHOW ME</button>
+            </div>
+        </div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <img src="Auction.png" id="logo">
+            <ul>
+                <li>HOME</li>
+                <li>CATEGORY</li>
+                <li>ABOUT US</li>
+                <li>LOGIN</li>
+                <li  onclick="sch()" id="switch-color">SWITCH</li>
+            </ul>
+        </nav>
+        <div class="para" id="para">
+            <h1>Online</h1>
+            <h1>Bidding</h1>
+            <p>
+                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  Donec velit neque,
+                 auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </p>
+            <button class="continue">Continue</button>
+        </div>
+        <div class="para2" id="para2">
+            <h1>Online</h1>
+            <h1>Selling</h1>
+            <p>
+                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  Donec velit neque,
+                 auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+            </p>
+            <button class="continue2">Continue</button>
+        </div>
+        <img src="circle.png" id="circle1">
+        <img src="circle.png" id="circle2">
+        <img src="circle.png" id="circle3">
+        <img src="circlepink.png" id="circle11">
+        <img src="circlepink.png" id="circle22">
+        <img src="circlepink.png" id="circle33">
+        <div class="image1" id="img1">
+            <img src="bid.png">
+        </div>
+        <div class="image2" id="img2">
+            <img src="deliver.png">
+        </div>
+    </section>
+    <section class="second"></section>
+    <section class="third"></section>
+   <script src="home.js"></script>
+</body>
+</html>

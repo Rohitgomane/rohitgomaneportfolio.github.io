@@ -98,7 +98,7 @@
             <div class="creative-img" style="background-image: url(images/car-product.png); background-position: center;">
             </div>
             <div class="creative-info">
-                <h3>Nike Shoes</h3>
+                <h3>Card Effect</h3>
                 <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                      Proin eget tortor risus. 
                      Pellentesque in ipsum id orci porta dapibus.
@@ -125,7 +125,7 @@
             <div class="creative-img" style="background-image: url(images/login.png); background-position: center;">
             </div>
             <div class="creative-info">
-                <h3>Nike Shoes</h3>
+                <h3>Login Page</h3>
                 <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                      Proin eget tortor risus. 
                      Pellentesque in ipsum id orci porta dapibus.
@@ -152,7 +152,7 @@
             <div class="creative-img" style="background-image: url(images/navbar.png); background-position: center;">
             </div>
             <div class="creative-info">
-                <h3>Nike Shoes</h3>
+                <h3>Navbar</h3>
                 <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                      Proin eget tortor risus. 
                      Pellentesque in ipsum id orci porta dapibus.
@@ -174,7 +174,32 @@
             </div>    
         </div>
 
-
+        <div class="creative-card"  id='bt' 
+        onclick='creative_7(this)'>
+            <div class="creative-img" style="background-image: url(images/slider.png); background-position: center;">
+            </div>
+            <div class="creative-info">
+                <h3>Slide Effect</h3>
+                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                     Proin eget tortor risus. 
+                     Pellentesque in ipsum id orci porta dapibus.
+                </p>
+                <div class="creative-lang" style="background: rgb(255, 0, 157)">
+                    <div class="lang-1">
+                        <h5>90%</h5>
+                        <h6>HTML</h6>
+                    </div>
+                    <div class="lang-2">
+                        <h5>90%</h5>
+                        <h6>CSS</h6>
+                    </div>
+                    <div class="lang-3">
+                        <h5>90%</h5>
+                        <h6>JAVA</h6>
+                    </div>
+                </div>
+            </div>    
+        </div>
 
     </div>
 
@@ -265,6 +290,21 @@
 
 			// redirect page.
             window.location.href = 'projects/navbar/index.html';
+            
+            window.clearTimeout(tID);		// clear time out.
+            
+        }, 350);	// call function after 5000 milliseconds or 5 seconds
+    }
+</script>
+
+<script>
+ 
+    // Using ES6 feature.
+    let creative_7 = (ele) => {
+        let tID = setTimeout(function () {
+
+			// redirect page.
+            window.location.href = 'projects/Bid/index.html';
             
             window.clearTimeout(tID);		// clear time out.
             
