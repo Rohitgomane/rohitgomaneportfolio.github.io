@@ -7,6 +7,8 @@
 }
 body {
     background: black;
+    overflow: hidden;
+    transition: 0.5s ease;
 }
 .navbar {
     position: fixed;
@@ -16,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     transform: translateY(-20px);
     transition: 1s ease 2s;
@@ -218,7 +220,7 @@ body {
     transition: 0.5s ease;
 }
 .bid:hover .content1 {
-    transform: skewX(20deg)translateY(-20px)translateX(-55px);
+    transform: skewX(20deg)translateY(-25px)translateX(-42px);
 }
 .content1 h2 {
     margin-top: -20px;
@@ -263,7 +265,7 @@ body {
 }
 
 .sell:hover .content2 {
-    transform: skewX(20deg)translateY(-20px)translateX(55px);
+    transform: skewX(20deg)translateY(-20px)translateX(42px);
 }
 .content2 h2 {
     margin-top: -20px;
@@ -391,6 +393,7 @@ body {
 ::-webkit-scrollbar {
     width: 12px;
     background: rgb(238, 238, 238);
+    transition: 0.5s ease;
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(transparent, rgb(96, 23, 237));
