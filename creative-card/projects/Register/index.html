@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="tool">
+        <div class="tool1">
+            <h6><li>Username must contain atleast 6 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters.</li></h6>
+            <img src="tooltip.png">
+        </div>
+        <div class="tool2">
+            <h6><li>Email-id is not valid.</li></h6>
+            <img src="tooltip.png">
+        </div>
+        <div class="tool3">
+            <h6><li>Password must contain atleast 6 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters.</li></h6>
+            <img src="tooltip.png">
+        </div>
+        <div class="tool4">
+            <h6><li>Repeated password must match <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;above password.</li></h6>
+            <img src="tooltip.png">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Create Account</h2>
+        <div class="input-box">
+        <label>Username</label>
+        <input type="text" class="username">
+        <label>Email Id</label>
+        <input type="email" class="email">
+        <label>Password</label>
+        <input type="password" class="pwd">
+        <label>Repeat Password</label>
+        <input type="password" class="pwdr">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        </div>
+        
+        <button onclick="button()">SUBMIT</button>
+        <div class="error-box">
+            
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
