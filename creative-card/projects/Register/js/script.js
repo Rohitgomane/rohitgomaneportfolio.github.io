@@ -25,10 +25,10 @@ function button() {
     error.style.padding = "5px 25px";
     error.style.border = "1px solid red";
     error.innerHTML = "Fill all the fields!";
-    img1.style.backgroundImage = "url(../red.png)";
-    img2.style.backgroundImage = "url(../red.png)";
-    img3.style.backgroundImage = "url(../red.png)";
-    img4.style.backgroundImage = "url(../red.png)";
+    img1.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/red.png')";
+    img2.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/red.png')";
+    img3.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/red.png')";
+    img4.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/red.png')";
     }
 
    else if(username.value.length < 6 && username.value.length > 0)
@@ -37,7 +37,7 @@ function button() {
     error.style.padding = "5px 25px";
     error.style.border = "1px solid red";
     error.innerHTML = "Invalid!";
-    img1.style.backgroundImage = "url(../red.png)";
+    img1.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/red.png')";
     tool1.style.animation = "tooltip 5s";
 }
 else if(pwd.value.length < 6 || pwd.value.length > 14)
@@ -46,7 +46,7 @@ else if(pwd.value.length < 6 || pwd.value.length > 14)
     error.style.border = "1px solid red";
     pwd.style.animation = "animation 3s ease";
     error.innerHTML = "Invalid!";
-    img3.style.backgroundImage = "url(../red.png)";
+    img3.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/red.png')";
     tool3.style.animation = "tooltip 5s";
 }
 else if(pwd.value != pwdr.value) {
@@ -54,16 +54,16 @@ else if(pwd.value != pwdr.value) {
     error.style.border = "1px solid red";
     pwdr.style.animation = "animation 3s ease";
     error.innerHTML = "Invalid!";
-    img4.style.backgroundImage = "url(../red.png)";
+    img4.style.backgroundImage = "url('https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/red.png')";
     tool4.style.animation = "tooltip 5s";
 }
 else {
     error.style.padding = "5px 25px";
     error.style.border = "1px solid green";
     error.innerHTML = '<b style="color:green;">Valid</b>';
-    img1.style.backgroundImage = "url(../green.png)";
-    img2.style.backgroundImage = "url(../green.png)";
-    img3.style.backgroundImage = "url(../green.png)";
-    img4.style.backgroundImage = "url(../green.png)";
+    img1.style.backgroundImage = "url(''https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/green.png'')";
+    img2.style.backgroundImage = "url(''https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/green.png'')";
+    img3.style.backgroundImage = "url(''https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/green.png'')";
+    img4.style.backgroundImage = "url(''https://rohitgomane.github.io/rohitgomaneportfolio.github.io/creative-card/projects/Register/green.png'')";
 }
 }
