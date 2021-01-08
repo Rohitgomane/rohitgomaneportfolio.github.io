@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/thanks.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1><span>E</span>SEVA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#first-section" class="home-nav">HOME</a></li>
+                <li class="services">SERVICES <span><img src="images/arrow-down-sign-to-navigate.png"></span>
+                    <div class="dropdown-content">
+                        <a href="life-insurance.html"><p id="life-insurance"><span><img src="images/health-insurance.png"></span>Life Insurance</p></a>
+                        <a href="car-insurance.html"><p id="car-insurance"><span><img src="images/cars.png"></span>Car Insurance</p></a>
+                        <a href="bike-insurance.html"><p id="bike-insurance"><span><img src="images/bikes.png"></span>Bike Insurance</p></a>
+                    </div>
+                </li>
+                
+                <li><a href="index.html#second-section">ABOUT US</a></li>
+               
+            </ul>
+           
+        </nav>
+        <div class="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <section class="insurance-section">
+
+<div class='cont'> 
+        <div class='left-insurance'> 
+            <div class='left-heading'> 
+                <h1><img src='images/profile.png'> Request a Car Advisor</h1> 
+            </div> 
+            <div class='left-form'> 
+                <div class='left-top'> 
+                    <div class='step1'>Step 1</div> 
+                    <div class='step2'>Step 2</div> 
+                </div> 
+                <form action='' class='left-middle'> 
+                    <div class='slide-step'> 
+                        <div class='step-first'> 
+                            <input type="text" placeholder="RTO Number">
+                            <input type="text" placeholder="Car Model">
+                            <input list='puc' placeholder='Buy Policy for'> 
+                            <datalist id='puc'> 
+                                <option value='Yes'> 
+                                <option value='No'> 
+                            </datalist> 
+                            <input type="text" placeholder="Date of Purchase" onfocus="(this.type='date')" onblur="(this.type='text')"> 
+                        </div> 
+                        <div class='step-second'> 
+                            <input type='text' placeholder='Your Name'> 
+                            <input type='email'placeholder='Email Id'> 
+                            <input type='tel'placeholder='Mobile No.'> 
+                            <div class='left-button'> 
+                                <input type='submit' onclick='submit_button()'> 
+                                <input type='reset'> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </form> 
+                <div class='left-bottom'> 
+                    <button class='previous' onclick='previous()'>Previous</button> 
+                    <button class='next' onclick='next_b()'>Next</button> 
+                </div> 
+            </div> 
+        </div> 
+        <div class='right-insurance'> 
+            <div class='right-contact'> 
+                <img src='images/phone.png'> 
+                <p>Call on number 9665605490 / 8956031232</p> 
+            </div> 
+            <hr> 
+            <div class='right-mail'> 
+                <img src='images/mail.png'> 
+                <p>info.esevaportal@gmail.com</p> 
+            </div> 
+            <hr> 
+            <div class='right-location'> 
+                <img src='images/location.png'> 
+                <p>Chaitnya sadan Opp. Thorat Misal, Pune- 411041</p> 
+            </div> 
+            <hr> 
+            <div class='social-icon'> 
+                <img src='images/facebook1.png'> 
+                <img src='images/instagram1.png'> 
+                <img src='images/twitter1.png'> 
+            </div> 
+        </div> 
+    </div>
+    </section>
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>

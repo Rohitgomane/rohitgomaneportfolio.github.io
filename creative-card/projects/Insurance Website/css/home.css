@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/*    Navbar    */
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 50px;
+    color: white;
+    z-index: 5;
+    transition: 0.4s ease;
+}
+header #logo {
+    z-index: 20;
+}
+header #logo a {
+    text-decoration: none;
+    color: white;
+}
+header #logo a h1 {
+    cursor: pointer;
+   font-size: 2.19vw;
+}
+nav {
+    width: 30%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+nav ul li {
+    font-size: 1.17vw;
+    cursor: pointer;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content {
+    position: absolute;
+    top: 80%;
+    right: 12%;
+    background: white;
+    color: #242424;
+    text-align: center;
+    font-size: 1.02vw;
+    line-height: 30px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 7px 5px 5px -6px rgba(0, 0, 0, 0.33);
+}
+.dropdown-content a{
+    color: #242424;
+}
+.dropdown-content p {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.dropdown-content p span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.dropdown-content p span img {
+    width: 22px;
+    margin-right: 10px;
+}
+.dropdown-content p:hover {
+    background:rgb(216, 216, 216);
+}
+.services:hover  .dropdown-content {
+    display: block;
+}
+.services:hover .dropdown-content p span img {
+    transform: rotate(0deg);
+}
+.services {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.services span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.services span img {
+    margin-left: 5px;
+    width: 15px;
+    transition: 0.3s ease;
+}
+.services:hover span img {
+    transform: rotate(-180deg);
+}
+
+.burger-menu {
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    width: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.burger-menu div {
+    height: 3px;
+    width: 100%;
+    background: white;
+    transition: 0.3s ease;
+}
+
+
+
+#first-section {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/Background.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 50px;
+    transition: 0.4s ease;
+}
+
+.first {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/Background.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 50px;
+    transition: 0.4s ease;
+}
+.title {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.title h1 {
+    font-size: 3.66vw;
+    color: #242424;
+    line-height: 4.39vw;
+}
+.title h1 span {
+    color: #FF8800;
+}
+.title p {
+    width: 65%;
+    font-size: 1.02vw;
+    color: #242424c4;
+    margin-top: 15px;
+}
+.title #quote {
+    cursor: pointer;
+    border: 0;
+    background: orange;
+    color: white;
+    font-size: 0.95vw;
+    padding: 7px 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.4s ease;
+}
+.title #quote:hover {
+    box-shadow: 0px 2px 20px 0px rgba(255, 166, 0, 0.782);
+}
+#second-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 50px;
+}
+#third-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: url("../images/get-in-touch-background.jpg");
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contact-us {
+    position: absolute;
+    bottom: 0px;
+    height: 60%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px 100px;
+    
+}
+.contact-first {
+    padding: 30px 30px;
+}
+.contact-first h2 {
+    font-size: 25;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: orange;
+}
+.contact-first p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #ffa500;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-first p img {
+    margin-left: 7px;
+    width: 12px;
+}
+.contact-second {
+    padding: 30px 30px;
+    color: orange;
+}
+.contact-second h2 {
+    font-size: 25;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-second p {
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-second p img {
+    margin-left: 7px;
+    width: 12px;
+}
+.contact-third {
+    width: 40%;
+    padding: 30px 30px;
+    color: orange;
+}
+.contact-third h2 {
+    font-size: 25;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-third p {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-third p img {
+    margin-left: 7px;
+    width: 12px;
+}
+.contact-third .contact-info {
+    margin-top: 10px;
+    color: #527BFF;
+}
+
+.contact-third .contact-info p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-third .contact-info p img{
+    width: 22px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 720px) {
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    #first-section {
+        background: url("../images/phone-background.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #first-section .title {
+        position: relative;
+        bottom: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+    }
+    #first-section .title h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    #first-section .title p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    #first-section .title button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .services span img {
+        width: 10px;
+    }
+
+
+    .cont {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cont .left-insurance {
+        width: 100%;
+    }
+    .cont .left-insurance .left-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont .left-insurance .left-heading {
+        
+        width: 100%;
+
+    }
+    .cont .left-insurance {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: transparent;
+    }
+      
+.left-content input[type=submit] {
+    width: 80px;
+    height: 25px;
+    font-size: 0.97vw;
+}
+.left-content input[type=reset] {
+    width: 80px;
+    height: 25px;
+    font-size: 0.97vw;
+}
+.agree {
+    width: 260px;
+    margin-left: 15px;
+}
+.cont .left-insurance .left-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.cont .right-insurance {
+    border-left: 0;
+}
+.social-icon {
+    width: 100%;
+}
+    nav ul{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+        background: orange;
+        transform: translateY(-100%);
+        transition: 0.4s ease-in-out;
+    }
+    nav ul li {
+        font-size: 18px;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .contact-third {
+        width: 100%;
+        padding: 30px 30px;
+        color: orange;
+    }
+    .dropdown-content {
+        position: absolute;
+        margin-top: -480px;
+        right: 37%;
+        font-size: 2.02vw;
+    line-height: 30px;
+    }
+    
+#third-section {
+    background: url("../images/get-in-touch-background-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    #first-section {
+        background-size: cover;
+        width: 100%;
+    }
+    #second-section {
+        height: 100vh;
+    }
+    .dropdown-content {
+        top: 90%;
+    }
+    .dropdown-content p span img {
+        width: 18px;
+        margin-right: 10px;
+    }
+    .title p {
+        width: 70%;
+        font-size: 1.02vw;
+        margin-top: 10px;
+    }
+   
+}
+
+
+@media screen and (max-width: 1024px) {
+    #first-section {
+        background-size: cover;
+        height: 100vh;
+    }
+    #second-section {
+        height: 100vh;
+    }
+    .cont {
+        margin-top: 15%;
+        height: 80vh;
+    }
+    .dropdown-content {
+        top: 90%;
+    }
+    .dropdown-content p span img {
+        width: 18px;
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ffa500;
+}

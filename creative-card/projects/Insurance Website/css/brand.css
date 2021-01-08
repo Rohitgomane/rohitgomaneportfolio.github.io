@@ -1,0 +1,189 @@
+
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.about-left {
+    width: 45%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.about-left h1{
+    font-size: 40px;
+    width: 90%;
+    line-height: 55px;
+    color: orange;
+}
+.about-left p {
+    font-size: 18px;
+    width: 80%;
+    margin-top: 15px;
+    color: #242424d5;
+}
+.about-right {
+    width: 45%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-right .brands {
+    position: relative;
+    width: 510px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.brands .transparent-img {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    z-index: 3;
+}
+
+.brands .transparent-img1 {
+    position: absolute;
+    top: 0px;
+    height: 120px;
+    width: 100%;
+    z-index: 3;
+    transform: rotate(180deg);
+}
+.about-right .brands .brand-img {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: brand-scroll 25s ease infinite;
+}
+.brand-img img {
+    margin: 5px 0px;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+.brand-img img:hover {
+    filter: grayscale(0%);
+}
+
+@media screen and (max-width: 720px) {
+    .about {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-left {
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+.about-right {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+}
+
+
+@keyframes brand-scroll {
+    0% {
+        transform: translateY(0%);
+    }
+    5% {
+        transform: translateY(-10%);
+    }
+    10% {
+        transform: translateY(-10%);
+    }
+    15% {
+        transform: translateY(-20%);
+    }
+    20% {
+        transform: translateY(-20%);
+    }
+    25% {
+        transform: translateY(-30%);
+    }
+    30% {
+        transform: translateY(-30%);
+    }
+    35% {
+        transform: translateY(-40%);
+    }
+    40% {
+        transform: translateY(-40%);
+    }
+    45% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+
+    55% {
+        transform: translateY(-50%);
+    }
+    60% {
+        transform: translateY(-40%);
+    }
+    65% {
+        transform: translateY(-40%);
+    }
+    70% {
+        transform: translateY(-30%);
+    }
+    75% {
+        transform: translateY(-30%);
+    }
+    80% {
+        transform: translateY(-20%);
+    }
+    85% {
+        transform: translateY(-20%);
+    }
+    90% {
+        transform: translateY(-10%);
+    }
+    95% {
+        transform: translateY(-10%);
+    } 
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+
+/* 
+ 0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+*/
