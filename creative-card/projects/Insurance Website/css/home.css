@@ -35,7 +35,7 @@ header #logo a {
 }
 header #logo a h1 {
     cursor: pointer;
-   font-size: 2.19vw;
+   font-size: 20px;
 }
 nav {
     width: 30%;
@@ -177,7 +177,7 @@ nav ul li a {
     flex-direction: column;
 }
 .title h1 {
-    font-size: 3.66vw;
+    font-size: 40px;
     color: #242424;
     line-height: 4.39vw;
 }
@@ -289,7 +289,7 @@ nav ul li a {
     color: orange;
 }
 .contact-third h2 {
-    font-size: 25;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -319,6 +319,76 @@ nav ul li a {
     width: 22px;
     margin-right: 10px;
 }
+@media screen and (max-width: 411px) {
+    #logo h1 {
+        font-size: 20px;
+    }
+    #first-section {
+        background: url("../images/phone-background.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    #first-section .title {
+       position: absolute;
+       top: 20px;
+    }
+    .slogan {
+        font-size: 10px;
+    }
+    #first-section .title p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+ 
+.contact-first h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-first p {
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-third h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-third p {
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-second h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-second p {
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-second p img {
+    margin-left: 7px;
+    width: 10px;
+}
+
+}
+
+
 @media screen and (max-width: 720px) {
     
     header {
@@ -342,11 +412,11 @@ nav ul li a {
         width: 70%;
     }
     #first-section .title h1 {
-        font-size: 20px;
-        line-height: 45px;
+        font-size: 25px;
+        line-height: 25px;
     }
     #first-section .title p {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 15px;
     }
     #first-section .title button {
@@ -439,8 +509,8 @@ nav ul li a {
     }
     .dropdown-content {
         position: absolute;
-        margin-top: -480px;
-        right: 37%;
+        margin-top: -280px;
+        right: 34%;
         font-size: 2.02vw;
     line-height: 30px;
     }

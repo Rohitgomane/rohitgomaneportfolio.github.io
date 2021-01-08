@@ -333,6 +333,101 @@ hr {
 .social-icon img:nth-child(3) {
     border-radius: 5px;
 }
+@media screen and (max-width: 411px) {
+    .left-insurance {
+        padding-top: 50px;
+    }
+    .left-heading h1 {
+        font-size: 20px;
+    }
+    .left-form {
+        background: rgb(243, 243, 243);
+        height: 80%;
+        width: 70%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        
+    }
+
+    
+.cont .left-insurance {
+    width: 45%;
+    height: 85%;
+   
+}
+.step-first input {
+    width: 220px;
+    height: 30px;
+   font-size: 10px;
+}
+.step-first input:focus {
+    border: 1px solid orange;
+    width: 290px;
+    font-size: 10px;
+}
+
+.step-second input {
+    width: 220px;
+    height: 30px;
+    font-size: 10px;
+}
+.step-second input:focus {
+    border: 1px solid orange;
+    width: 290px;
+    font-size: 10px;
+}
+.left-button input[type=submit] {
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background-color: orange;
+    border: 0;
+    color: white;
+    font-size: 10px;
+}
+.left-button input[type=reset] {
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid orange;
+    color: orange;
+    font-size: 10px;
+}
+
+
+.left-bottom button {
+    cursor: pointer;
+    padding: 5px 15px;
+    font-weight: 900;
+    border: 0;
+    background: rgb(0,68,148);
+background: linear-gradient(45deg, rgba(0,68,148,1) 0%, rgba(0,130,203,1) 35%, rgba(0,212,255,1) 100%);
+}
+.left-bottom button:nth-child(1) {
+    cursor: not-allowed;
+    opacity: 0.6;
+    padding: 5px 15px;
+    background: transparent;
+    border: 1px solid  rgb(0,68,148);
+    color:  rgb(0,68,148);
+}
+
+.cont .right-insurance {
+    width: 100%;
+    height: 35%;
+    background: rgb(235, 235, 235);
+   display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+hr {
+    display: none;
+}
+} 
 @media screen and (max-width: 720px) {
     .social-icon img{
         width: 26px;
