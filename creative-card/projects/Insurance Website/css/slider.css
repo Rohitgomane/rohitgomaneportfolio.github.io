@@ -365,7 +365,7 @@ hr {
 }
 .step-first input:focus {
     border: 1px solid orange;
-    width: 290px;
+    width: 230px;
     font-size: 10px;
 }
 
@@ -376,7 +376,7 @@ hr {
 }
 .step-second input:focus {
     border: 1px solid orange;
-    width: 290px;
+    width: 230px;
     font-size: 10px;
 }
 .left-button input[type=submit] {

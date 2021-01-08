@@ -332,7 +332,7 @@ nav ul li a {
     }  
     #first-section .title {
        position: absolute;
-       top: 20px;
+       top: -150px;
     }
     .slogan {
         font-size: 10px;
@@ -340,6 +340,7 @@ nav ul li a {
     #first-section .title p {
         font-size: 10px;
         line-height: 15px;
+        
     }
  
 .contact-first h2 {
@@ -409,7 +410,7 @@ nav ul li a {
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 70%;
+        width: 80%;
     }
     #first-section .title h1 {
         font-size: 25px;
@@ -418,6 +419,7 @@ nav ul li a {
     #first-section .title p {
         margin-top: 20px;
         font-size: 15px;
+        font-weight: 600;
     }
     #first-section .title button {
         width: 100px;
