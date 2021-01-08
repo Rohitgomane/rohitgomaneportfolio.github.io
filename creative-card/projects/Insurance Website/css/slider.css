@@ -337,38 +337,7 @@ hr {
     .social-icon img{
         width: 26px;
     }
-    #first-section {
-        background: url("phone-background.jpg");
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #first-section .title {
-        position: relative;
-        bottom: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 70%;
-    }
-    #first-section .title h1 {
-        font-size: 40px;
-        line-height: 45px;
-    }
-    #first-section .title p {
-        margin-top: 20px;
-        font-size: 15px;
-    }
-    #first-section .title button {
-        width: 100px;
-        height: 30px;
-        font-size: 10px;
-    }
-    .services span img {
-        width: 10px;
-    }
+   
 
 
     .cont {
