@@ -1,132 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/home.css">
-    
-    <link rel="stylesheet" href="css/thanks.css">
-    <link rel="stylesheet" href="css/brand.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Eseva</title>
 </head>
+
 <body>
 
-    
-    <header>
-        <div id="logo">
-            <a href="index.html"><h1>ESEVA</h1></a>
+    <header id="home-header" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-out">
+        <div id="full-logo">
+            <img src="images/full-logo.png">
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html#first-section" class="home-nav">HOME</a></li>
-                <li class="services">SERVICES <span><img src="images/arrow-down-sign-to-navigate.png"></span>
-                    <div class="dropdown-content">
-                        <a href="life-insurance.html"><p id="life-insurance"><span><img src="images/health-insurance.png"></span>Life Insurance</p></a>
-                        <a href="car-insurance.html"><p id="car-insurance"><span><img src="images/cars.png"></span>Car Insurance</p></a>
-                        <a href="bike-insurance.html"><p id="bike-insurance"><span><img src="images/bikes.png"></span>Bike Insurance</p></a>
-                    </div>
-                </li>
-                
-                <li><a href="index.html#second-section">ABOUT US</a></li>
-               
-            </ul>
-           
+        <nav id="home-nav">
+            <a href="index.html#home-section" class="home-nav-links header-home">Home</a>
+            <a href="#" class="home-nav-links services">Services <img src="images/down-arrow.png"> <div class="drop-down"><a href="" class="drop-list">Insurance</a></div>
+            </a>
+            <a href="#about-section" class="home-nav-links">About Us</a>
+            <a href="contact.html" class="home-nav-links">Contact</a>
         </nav>
+        <a href="#" class="register-button">Register</a>
         <div class="burger-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </header>
-
-
-
-    <section id="first-section">
-        <div class="title">
-            <h1 class="slogan">Complete protection
-                <span>for your loved once</span></h1>
-                <p>Buying a insurance is like fixing a leak in your roof...
-                The longer you wait, the more expensive it gets </p>
-                <a href="life-insurance.html"><button id="quote">Get Quote</button></a>
+    <a href="#home-section" id="top-page-scroll"><img src="images/up-arrow.png"></a>
+    <section id="home-section">
+        <div class="home-left" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-out">
+            <h1>Our Solutions Focus On <span>Your Problems</span>
+            </h1>
+            <p>We are here to solve your problems @ your doorstep</p>
+            <div class="home-buttons">
+                <a href="#"><button>Get Insurance</button></a>
+                <button>Know More</button>
+            </div>
         </div>
-    </section>
-  
-    <section id="second-section">
-        <div class="about">
-            <div class="about-left">
-                <h1>
-                    Backed by the most trusted insurers in India
-                </h1>
-                <p>
-                    We have a wide range of insurance partners with various exciting insurance offers from you to choose
-                </p>
-            </div>
-            <div class="about-right">
-                <div class="brands">
-                    <div class="brand-img">
-                        <img src="images/brands/1.jpg">
-                        <img src="images/brands/2.jpg">
-                        <img src="images/brands/3.jpg">
-                        <img src="images/brands/4.jpg">
-                        <img src="images/brands/5.jpg">
-                        <img src="images/brands/6.jpg">
-                        <img src="images/brands/7.jpg">
-                        <img src="images/brands/8.jpg">
-                        <img src="images/brands/9.jpg">
-                        <img src="images/brands/10.jpg">
-                        <img src="images/brands/11.jpg">
-                        <img src="images/brands/12.jpg">
-                        <img src="images/brands/13.jpg">
-                        <img src="images/brands/14.jpg">
-                        <img src="images/brands/15.jpg">
-                        <img src="images/brands/16.jpg">
-                        <img src="images/brands/17.jpg">
-                        <img src="images/brands/18.jpg">
-                        <img src="images/brands/19.jpg">
-                        <img src="images/brands/20.jpg">
-                        <img src="images/brands/21.jpg">
-                    </div>
-                    <img class="transparent-img1" src="images/brands/transparent.png">
-                    <img class="transparent-img" src="images/brands/transparent.png">
-                </div>
-            </div>
+        <div class="home-right" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-out">
+            <img src="images/services.png">
         </div>
     </section>
 
+    <section id="services-section">
+        <h2>OUR SERVICES</h2>
+        <p class="service-p">We provide following services</p>
+        <div class="services-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
 
-    <section id="third-section">
-        <div class="contact-us">
-            <div class="contact-first">
-                <h2>Insurances</h2>
-                <p>Life insurance <img src="images/right-arrow.png"></p>
-                <p>Bike insurance <img src="images/right-arrow.png"></p>
-                <p>Car insurance <img src="images/right-arrow.png"></p>
+            <div class="card">
+                <div class="card-circle"><img src="images/pan.png"></div>
+                <h6>Pan Card</h6>
+                <p>A permanent account number (PAN) is a ten-character alphanumeric identifier, issued in the form of a laminated "PAN card".</p>
             </div>
-            <div class="contact-second">
-                <h2>Insurances</h2>
-                <p>About us <img src="images/right-arrow.png"></p>
-                <p>Privacy policy <img src="images/right-arrow.png"></p>
-                <p>Terms and conditions <img src="images/right-arrow.png"></p>
-                <p>Refund & cancellation policy <img src="images/right-arrow.png"></p>
-                <p>Shipping & delivery policy <img src="images/right-arrow.png"></p>
-                <p>Grievance policy <img src="images/right-arrow.png"></p>
-                <p>Fraud policy <img src="images/right-arrow.png"></p>
+
+            <div class="card">
+                <div class="card-circle"><img src="images/gstf.png"></div>
+                <h6>Gst Registration</h6>
+                <p>Under the present GST regime, every individual or company that supplies goods and services has to register under Goods and Service Tax (GST).</p>
             </div>
-            <div class="contact-third">
-                <h2>Insurances</h2>
-                <p>Sakal Bima is an Insurance Regulatory & Development Authority of India (IRDAI) approved Intermediary.</p>
-                <div class="contact-info">
-                    <p><img src="images/phone.png">9665605490 / 8956031232</p>
-                    <p><img src="images/mail.png">info.esevaportal@gmail.com</p>
-                </div>
+
+            <div class="card">
+                <div class="card-circle"><img src="images/itr.png"></div>
+                <h6>ITR File</h6>
+                <p>Income Tax Return is the form in which assessee files information about his Income and tax thereon to Income Tax Department.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-circle"><img src="images/gstr.png"></div>
+                <h6>Gst File Return</h6>
+                <p>Under the present GST regime, every individual or company that supplies goods and services has to register under Goods and Service Tax (GST).</p>
+            </div>
+            <div class="card">
+                <div class="card-circle"><img src="images/digital.png"></div>
+                <h6>Digital Signature</h6>
+                <p>A digital signature is a mathematical scheme for verifying the authenticity of digital messages or documents.</p>
+            </div>
+            <div class="card">
+                <div class="card-circle"><img src="images/shop.png"></div>
+                <h6>Shop Act</h6>
+                <p>When an entity employs people who may be casual workers, full time employees, contract based etc, to regulate the work conditions and ensure the workers’ rights are protected, it is mandatory to get registered under the Shops and Establishments
+                    Act, informally called Shop Licence.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-circle"><img src="images/food.png"></div>
+                <h6>Food Licence</h6>
+                <p>Food Safety and Standards Authority of India (FSSAI) is an autonomous body established under the Ministry of Health and Family Welfare, Government of India.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-circle"><img src="images/uaadhar.png"></div>
+                <h6>Udyog Aadhar</h6>
+                <p>Udyog Aadhaar is a twelve digit Unique Identification Number provided by the Ministry of Micro, Small and Medium Enterprises, Government of India for small and medium enterprises in India.</p>
             </div>
         </div>
+        <button class="learn-more" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">LEARN MORE</button>
     </section>
 
+    <section id="about-section">
+        <img src="images/about-us.jpg">
+        <h1>ABOUT US</h1>
+        <p class="about-p1" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-out">Customer service is an important building block for the success of any company. It is expensive for a business to survive solely off of new busine$ We have introduced esevaportal to help all resident Indians and non residendt indians, who want
+            to apply for the PAN Card in a simplest manner like$ We support customer to fill ITR,GST,ITR Return, GST registration also help to our retailers to grow their business. Highly qulified team to support customers our best Charted Account's always
+            engaged in customers problem.</p>
+        <p class="about-p2" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-out">We are a dynamic and fast growing company committed towards creating value for our customers. Located in Pune, India the educational and IT hub of $ we take pride in delivering rapid, customized open source enterprise applications following agile
+            and lean software methods. Whether you are develop we focus on making technology work for our clients by delivering quality offshore and outsourcing solutions which reduce the Total Cost of Ownership</p>
+        <button class="learn-more" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-out">LEARN MORE</button>
+    </section>
 
+    <section id="contact-section">
+        <div class="contact-top">
+            <h1>CONTACT US</h1>
+        </div>
+        <div class="contact-bottom" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+            <div class="contact-logo"><img src="images/full-logo.png"></div>
+            <div class="contact-product">
+                <h2>Products</h2>
+                <p>Home</p>
+                <p>Our Services</p>
+            </div>
+            <div class="contact-contact">
+                <h2>Connect with us</h2>
+                <p>Contact us</p>
+                <h6><img src="images/phone.png">9860424590</h6>
+                <h6><img src="images/mail.png">info@yourcompany.com</h6>
+            </div>
+            <div class="contact-about">
+                <h2>About Us</h2>
+                <p>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
+            </div>
+            <hr>
+            <p class="copyright">Copyright (c) Eseva Portal</p>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/script.js"></script>
-    <script src="js/burger.js"></script>
 </body>
+
 </html>
